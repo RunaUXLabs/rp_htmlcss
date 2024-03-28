@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/* 빨강 정사각형 */
+div {
+  width: 100px;
+  height: 100px;
+
+  background-color: red;
+  color: white;
+}

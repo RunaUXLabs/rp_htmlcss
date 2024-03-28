@@ -1,14 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>이미지태그 기초</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 
 <body>
-    <img src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ftistory1.daumcdn.net%2Ftistory%2F1614757%2Fattach%2Ff2dd4d7fc8534d839708f12d076076b0">
-    <img src="rch83p_vfba-1mgnhrg_logo.png">
+    <!-- <img src="주소" alt="대체텍스트">  기본구조 -->
+    <!-- <img src="주소" alt> 이미지를 대체할 텍스트가 의미없는경우 축약구조 -->
+
+    <!-- 웹에 게시된 이미지 고유주소, 절대경로 -->
+    <img src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ftistory1.daumcdn.net%2Ftistory%2F1614757%2Fattach%2Ff2dd4d7fc8534d839708f12d076076b0"
+        alt="루비페이퍼 로고">
+    <img src="https://lifet-img.s3.ap-northeast-2.amazonaws.com/6b980705-1d57-46a4-8193-ca490d19d00d" alt="태닝중인고양이">
+
+    <!-- 내 로컬에 있는 소유 이미지, 상대경로 or 절대경로로 접근가능 -->
+    <!-- 구석에 짱박아둔 이미지 3장 띄우기(상대, 절대경로 골고루) -->
+    <img src="./rch83p_vfba-1mgnhrg_logo.png" alt="루비페이퍼 타이포로고">
+    <img src="rch83p_vfba-1mgnhrg_logo.png" alt="루비페이퍼 타이포로고">
+    <img src="../고양이01.webp" alt>
+
+    <img src="/07/images/ruby.jpg" alt>
+
+
 </body>
 
 </html>

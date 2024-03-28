@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.box {
+  /* 인라인 블록 */
+  display: inline-block;
+
+  /* 정사각형 */
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: white;
+
+  /* margin: 10px; */
+}

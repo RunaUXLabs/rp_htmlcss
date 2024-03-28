@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+table {
+  /* 선과 선이 만나는 부분을 접어라 */
+  border-collapse: collapse;
+  margin: 0 0 50px 0;
+}
+
+/* th, td 태그에 테두리 추가 */
+th, td {
+  border: solid 1px black;
+}
+
+table.ex02 {
+  width: 50%;
+  min-width: 500px;
+  margin: 0 auto;
+}
+
+.bg_y {
+  background-color: khaki;
+}
+/* table.ex02 tr:nth-child(1) {
+  background-color: khaki;
+} */
+table.ex02 tr:first-child {
+  background-color: khaki;
+}

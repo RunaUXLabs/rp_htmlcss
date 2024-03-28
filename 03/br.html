@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>문단의 줄바꿈 br</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
@@ -10,6 +11,15 @@
     HTML에서는 줄바꿈이 무시됩니다.<br>
     하지만 br 태그가 나오면<br>
     줄바꿈됩니다.
+    <!-- 우리는 레이아웃 배치를 해야하기 때문에
+    각 컨텐츠를 태그에 담아서 배치하는것이 정석!
+    body 태그 직계 하위에 쌩 글씨로 넣으면 해당글씨를
+    이동 시킬 수 없음! -->
+
+    HTML에서는 줄바꿈이 무시됩니다.<br><br><br><br><br><br><br><br>
+    하지만 br 태그가 나오면<br>
+    <!-- br은 문단<p>에서 줄바꾸는 용도이지 margin(여백)의
+    용도로 사용하지 말자! 여백은 css로 관리하는 것이다. -->
 </body>
 
 </html>

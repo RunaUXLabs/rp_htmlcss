@@ -1,19 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>열 합치기 colspan</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-</head>
-
-<body>
     <style>
-        /* td 태그에 테두리 추가 */
+        table {
+            /* 선과 선이 만나는 부분을 접어라 */
+            border-collapse: collapse;
+            margin: 0 0 50px 0;
+        }
+
+        /* th, td 태그에 테두리 추가 */
+        th,
         td {
             border: solid 1px black;
         }
     </style>
+</head>
 
+<body>
     <table>
         <tr>
             <td>1</td>
@@ -26,6 +33,9 @@
             <td colspan="2">마지막 셀</td>
         </tr>
     </table>
+    <!-- 엑셀처럼 생각하자, 열을 합치려고 하는 대상의 첫번째에
+    colspan 속성을 선언하고 몇개를 합칠 것인지 숫자를 적는다
+    대상이 먹어치웠으니, 먹은건 삭제💥  -->
 </body>
 
 </html>

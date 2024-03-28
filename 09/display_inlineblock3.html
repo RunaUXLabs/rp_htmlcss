@@ -1,37 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>혼종 인라인블럭 03</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/09/css/display_inlineblock2.css">
 </head>
 
 <body>
-    <style>
-        .box {
-            /* 인라인 블록 */
-            display: inline-block;
+    <!-- 인라인블럭은 안의 내용물을 기반으로 사이즈가}
+    잡힌다. 인라인블럭 요소 안에 아무것도 없다면
+    레잉웃이 틀어지는 불상사가 일어난다.
 
-            /* 정사각형 */
-            width: 100px;
-            height: 100px;
+    display_inlineblock에서 설명했듯이, 굳이굳이 폰트사이즈를
+    0으로 설정했다가 콘텐츠에서 복구하는 형식으로
+    css를 설정하고 인라인블럭으로 레이아웃을 만들었다가
+    컨텐츠가 빈 태그일때 레이아웃 무너지는 경험을 할
+    필요는 없다고 본다.
 
-            background-color: red;
-            color: white;
-
-            /* 폰트 사이즈 재설정 */
-            font-size: 16px;
-        }
-
-        * {
-            /* 폰트 사이즈 제거 */
-            font-size: 0;
-        }
-    </style>
-
-    <div class="box">
-
-    </div>
+    flex 쓰세요...-->
+    <div class="box"> </div>
     <div class="box">
         두 번째
     </div>

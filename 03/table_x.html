@@ -1,19 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>테이블 기초 - 하지말아야할 것</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-</head>
-
-<body>
     <style>
-        /* td 태그에 테두리 추가 */
+        table {
+            /* 선과 선이 만나는 부분을 접어라 */
+            border-collapse: collapse;
+            margin: 0 0 50px 0;
+        }
+
+        /* th, td 태그에 테두리 추가 */
+        th,
         td {
             border: solid 1px black;
         }
     </style>
+</head>
 
+<body>
+    <!-- 엑셀처럼 생각해서 행별로 컬럼의 갯수를 맞춰야 한다. -->
     <table>
         <tr>
             <td>1</td>

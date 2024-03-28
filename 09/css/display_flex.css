@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/* 플렉스 박스 */
+.flex {
+  /* display: flex; */
+  display: inline-flex;
+  /* width: 300px; */
+  margin: 20px 0px;
+  border: solid 1px black;
+  padding: 16px;
+  background-color: aquamarine;
+}
+
+.flex > div {
+  background-color: blueviolet;
+  color: white;
+  border: solid 1px black;
+}

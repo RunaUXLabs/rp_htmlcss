@@ -1,39 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>중첩 ul</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        /* ul {
+            padding: 0;
+            margin: 0;
+        } */
+        /* css를 선언할 때 선택자를 태그로 잡으면 body안의 모든 태그가 해당 속성을 받으므로 무작정 태그 본체에 선언을 하는 형태는 지양하자. 선택자를 자세히 알 수록 범위를 좁힐 수 있으니 꾸준히 공부해보기!🧐  */
+        .box {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body>
-    <h3>
-        프로그래밍 언어 목록
-    </h3>
+    <h3> 프로그래밍 언어 목록 </h3>
     <ul>
-        <li>
-            자바
-        </li>
-        <li>
-            파이썬
-        </li>
+        <li> 자바 </li>
+        <li> 파이썬 </li>
         <li>
             C
-            <ul>
-                <li>
-                    C++
-                </li>
+            <ul class="box">
+                <li> C++ </li>
                 <li>
                     C#
-                    <ul>
-                        <li>
-                            F#
-                        </li>
+                    <ul class="box">
+                        <li> F# </li>
                     </ul>
                 </li>
             </ul>
         </li>
     </ul>
+    <!-- 중첩 구조로 이루어진 리스트 태그는 알아서 머릿기호 계위가 표시된다 -->
 </body>
 
 </html>

@@ -1,22 +1,36 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>테이블 기초</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-</head>
-
-<body>
     <style>
-        /* td 태그에 테두리 추가 */
+        table {
+            /* 선과 선이 만나는 부분을 접어라 */
+            border-collapse: collapse;
+            margin: 0 0 50px 0;
+        }
+
+        /* 셀렉터 활용시 원하는 부분 하이라이팅 가능 */
+        table.basicSample tr:nth-child(3) {
+            background-color: chocolate;
+        }
+
+        /* th, td 태그에 테두리 추가 */
+        th,
         td {
             border: solid 1px black;
         }
     </style>
+</head>
+
+<body>
+    <!-- table > tr > th, td -->
     <table>
         <tr>
-            <td>첫 번째 셀</td>
+            <th>첫 번째 셀</th>
+            <!-- <td>첫 번째 셀</td> -->
         </tr>
         <tr>
             <td>두 번째 셀, 두 번째 행</td>
@@ -40,6 +54,64 @@
             <td></td>
         </tr>
     </table>
+
+    <!-- table > thead, tbody, tfoot > tr > th, td -->
+    <table>
+        <!-- <colgroup></colgroup> -->
+        <!-- colgroup은 컬럼기준 일괄적인 레이아웃 지정시 사용함,
+        css를 통해 개별적용또한 가능하다 -->
+        <thead>
+            <tr>
+                <th>제목</th>
+                <td>내용</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>제목</th>
+                <td>내용</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>제목</th>
+                <td>내용</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- 엑셀보고 표만들어보기 :) -->
+    <table class="basicSample">
+        <tr>
+            <th></th>
+            <th>제목1</th>
+            <th>제목2</th>
+            <th>제목3</th>
+            <th>제목4</th>
+        </tr>
+        <tr>
+            <th>항목1</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <th>항목2</th>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <th>항목3</th>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+    </table>
+
 </body>
 
 </html>

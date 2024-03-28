@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>미리 정의된 태그 pre</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
@@ -11,7 +12,26 @@
         원래 XML 문법상으로는 탭을 구분할 수 없지만
 pre 태그 안에서는 탭도 모두 적용됩니다.
 줄바꿈도요!
-</pre>
+    </pre>
+    <!-- 본문을 쓰는 용도보다는, 코드를 보여주는 본문에
+    사용하여 들여쓰기나 줄바꿈을 용이하게 보여주는 목적으로
+    사용된다. 손쉽게 일반 워드프로그램처럼 본문이 입력된다고
+    pre태그를 남발해서는 안된다.
+    css의 white-space: pre;를 통해 대체가 가능하다 -->
+    <p>
+        원래 XML 문법상으로는 탭을 구분할 수 없지만
+        pre 태그 안에서는 탭도 모두 적용됩니다.
+        줄바꿈도요!
+    </p>
+
+    <!-- css를 활용한 일반태그 pre화 하기 -->
+    <p style="white-space: pre;">
+        원래 XML 문법상으로는
+        탭을 구분할 수 없지만
+        pre 태그 안에서는
+        탭도 모두 적용됩니다.
+        줄바꿈도요!
+    </p>
 </body>
 
 </html>

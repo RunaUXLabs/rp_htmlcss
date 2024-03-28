@@ -1,25 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>순서가 없는 리스트 기본 ul</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 
 <body>
-    <h3>
-        프로그래밍 언어 목록
-    </h3>
+    <h3> 프로그래밍 언어 목록 </h3>
+    <!-- UI 컴포넌트에서 분석했듯이 목록그룹의 기초가 되는 태그이다.
+    형태는 <ul> 직계로 <li>가 와야 하며(표준조건), <li>의 자식으로는
+    어떤 요소든 넣을 수 있다.
+    <ul>과 <li>모두 블록요소이므로 줄바꿈 같은 컬럼 레이아웃을 보인다.
+    <ul>에는 margin과 padding이 내재되어 있어 레이아웃 수정을 원하면
+    css로 변경해서 사용하면되고, 각 <li>의 머릿기호는 컨텐츠 영역(파란영역)
+    밖으로 삐져나와 있다(<ul>의 padding영역과 겹침) -->
     <ul>
-        <li>
-            자바
-        </li>
-        <li>
-            파이썬
-        </li>
-        <li>
-            C
-        </li>
+        <li> 자바 </li>
+        <!-- <li type="square"> 자바 </li> -->
+        <!-- 🔺에러남!! <ol>에서 타입을 직접 지정해서 사용할 수 있는데,
+        <ul>에서는 태그 속성으로 선언하면 에러가 나며
+        css의 list-style-type을 통해 변경하면 된다.
+        (disc기본값, circle, square 등) -->
+        <li> 파이썬 </li>
+        <li> C </li>
+        <li> C </li>
+        <li> C </li>
     </ul>
 </body>
 

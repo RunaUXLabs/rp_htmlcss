@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>루비주석</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
@@ -9,12 +10,27 @@
 <body>
     <!-- 아래 두 ruby 태그의 결과는 같습니다.-->
     <ruby>
-        大<rp>(</rp><rt>대</rt><rp>)</rp>
-        韓<rp>(</rp><rt>한</rt><rp>)</rp>
-        民<rp>(</rp><rt>민</rt><rp>)</rp>
-        國<rp>(</rp><rt>국</rt><rp>)</rp>
-    </ruby>  
-    
+        大
+        <rp>(</rp>
+        <rt>대</rt>
+        <rp>)</rp>
+
+        韓<rp>(</rp>
+        <rt>한</rt>
+        <rp>)</rp>
+        民<rp>(</rp>
+        <rt>민</rt>
+        <rp>)</rp>
+        國<rp>(</rp>
+        <rt>국</rt>
+        <rp>)</rp>
+    </ruby>
+
+    <!-- 한글이 본 글자 위에 올라간 모습으로 보여진다.
+    ruby태그를 지원하지 않는 브라우저에서 rp를 사용하면 이를 인식하여
+    大(대)韓(한) 이렇게보인다.  -->
+
+    <!-- rp태그를 뺀 축약버전, 크로스브라우징을 할 거라면 rp를 웬만하면 넣어 작성하자  -->
     <ruby>
         大<rt>대</rt>
         韓<rt>한</rt>

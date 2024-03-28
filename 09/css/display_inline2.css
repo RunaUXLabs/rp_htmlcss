@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/* 빨강 정사각형 */
+span {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: white;
+  /* display: block; */
+  /* margin: 0 20px 0 20px; */
+  /* padding: 20px 0 20px 0; */
+}

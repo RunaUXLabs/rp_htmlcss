@@ -1,15 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>강조를 담당하는 b와 strong</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 
 <body>
-    <b>
-        b 태그는 텍스트가 굵어집니다.
-    </b>
+    <!-- b는 시각적 굵은글씨 표현용 -->
+    <b>b 태그는 텍스트가 굵어집니다.</b>
+    <p>
+        하지만 검색 엔진은 <b>strong</b> 태그를 의미적으로 더 중요하게 판단합니다.<br>
+        하지만 검색 엔진은 <span style="font-weight: 700; color: rgb(114, 189, 28);">strong</span> 태그를 의미적으로 더 중요하게 판단합니다.<br>
+        하지만 검색 엔진은 <b style="color: aqua;">strong</b> 태그를 의미적으로 더 중요하게 판단합니다.<br>
+    </p>
+
+
+    <!-- strong은 내용상 강조를 해야하는 중요표시용 + 굵은 글씨 -->
     <strong>
         strong 태그도 텍스트가 굵어집니다.
     </strong>

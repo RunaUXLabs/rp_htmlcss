@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/* 선택자{
+  속성: 속성값;
+  속성: 속성값;
+  속성: 속성값;
+} */
+
+/* 타이포에 대한 속성은 자식에게 상속된다 */
+/* 한번 선언해서 두루두루 땡겨쓸수 있게 css를 설계하자 */
+button {
+  display: flex;
+  padding: 7px 10px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 3px;
+  border: 1px solid #0262CE;
+  background: #0078FF;
+  color: #FFF;
+  text-align: center;
+
+  /* naver/btKeyword */
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.7px;
+}

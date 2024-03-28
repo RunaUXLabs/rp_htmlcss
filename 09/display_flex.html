@@ -1,32 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>피그마 오토레이아웃 = display:flex</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/09/css/display_flex.css">
 </head>
 
 <body>
-    <style>
-        /* 플렉스 박스 */
-        .flex {
-            display: flex;
-            border: solid 1px black;
-            padding: 16px;
-            background-color: aquamarine;
-        }
+    <!-- 피그마의 오토레이아웃과 매칭해서 보자.
+    부모에 display: flex라고 선언을 하면 오토레이아웃을
+    설정한 부모처럼 자식의 정렬을 관장할 수 있다.
 
+    기본값으로는 오토레이아웃 정렬 9개 포인트에서
+    top,left 설정이 자동으로 잡히며,
+    css에서 이 설정값을 바꿔서 레이아웃을 조정한다.
 
-        .flex>div {
-            /* 보라 배경색 */
-            background-color: blueviolet;
-            color: white;
+    피그마에서 inline-flex가 많이 보이지만,
+    inline-block같은 개념이라
+    가로, 세로, 전체 마진, 전체 패딩이 적용된다.
 
-            /* 테두리 */
-            border: solid 1px black;
-        }
-    </style>
-
+    그럼 flex와 inline-flex의 아웃풋이 거의 같은데
+    어떤점이 다른걸까? inline-flex 부모가 나란히 있을때
+    그 상위 레이아웃에서 확인 가능하다.-->
     <div class="flex">
         <div>
             플렉스
@@ -41,6 +38,20 @@
             좋다!
         </div>
     </div>
+    <!-- <div class="flex">
+        <div>
+            플렉스
+        </div>
+        <div>
+            박스는
+        </div>
+        <div>
+            인라인 보다
+        </div>
+        <div>
+            좋다!
+        </div>
+    </div> -->
 </body>
 
 </html>

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>제목 태그 h1~h6</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
@@ -11,8 +12,65 @@
     <h2>H2입니다.</h2>
     <h3>H3입니다.</h3>
     <h4>H4입니다.</h4>
+    저는 비교용 기본글씨 입니다.
     <h5>H5입니다.</h5>
     <h6>H6입니다.</h6>
+
+    <!-- 시멘틱 태그 중 <section></section>가 있다 -->
+    <section>
+        안녕?
+    </section>
+    <!-- 시멘틱 태그 중 <article></article>이 있다 -->
+    <article>
+        반가워
+    </article>
+    <!-- 🔺 경고메시지 뜲 -->
+
+    <!-- 🔻올바른 접근법은? h2~h6까지 타이틀을 담당하는
+    태그를 자식으로 넣어야 한다. -->
+    <section>
+        <h2>안녕?</h2>
+    </section>
+    <article>
+        <h2>반가워</h2>
+    </article>
+
+    포함관계 예시
+    <section>
+        <h2>중제목</h2>
+        <article>
+            <h3>소제목1</h3>
+            <p>본문1</p>
+        </article>
+
+        <article>
+            <h3>소제목2</h3>
+            <p>본문2</p>
+        </article>
+
+        <article>
+            <h3>소제목3</h3>
+            <p>본문3</p>
+        </article>
+    </section>
+
+    <!-- 문단태그 p -->
+    <p>
+        문단전용 태그임,
+        본문에 해당하는 내용이 들어가면 되고
+        주의사항) div(disdplay속성이 block인 자식)를
+        자식으로 가질 수 없다.
+    </p>
+
+    <p>
+        p를 대체해서 많이들 쓰는 묶는 용도의 div와 span.
+        *css가 적용이 안되었다는 전제조건으로 기본값은
+        div는 한줄 다 내꺼(figma의 fill),
+        span은 자식만큼(figma의 hug)
+    </p>
+    <div>안녕</div>
+    <span>안녕</span>
+
 </body>
 
 </html>

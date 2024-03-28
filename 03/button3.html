@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>버튼 속성 02</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 
 <body>
-    <button>
-        기본
-    </button>
-    <button type="reset">
-        초기화
-    </button>
-    <button type="submit">
-        제출
-    </button>
+    <!-- 속성값에 대한 기능분류 -->
+    <button> 기본 </button>
+    <button type="reset"> 초기화 </button>
+    <button type="submit"> 제출 </button>
+
+    <!-- 실제 활용, form 식구들은 꼭 form 안에 써야 범주가 설정되고 그 안에서
+    일처리를 한다 -->
+    <form>
+        <input type="text">
+        <button type="reset"> 초기화 </button>
+    </form>
 </body>
 
 </html>

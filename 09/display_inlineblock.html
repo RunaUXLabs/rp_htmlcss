@@ -1,32 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>혼종 인라인블럭 01</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/09/css/display_inlineblock.css">
 </head>
 
 <body>
-    <style>
-        .box {
-            /* 인라인 블록 */
-            display: inline-block;
+    <!-- 블럭과 인라인블럭의 특징을 섞어만든 인라인블럭,
+    css3 이전시대에 레이아웃에 응용하기 위해 탄생시켰다.
+    가로, 세로, 전체 마진, 전체 패딩,
+    나열(옆자리 빈공간채우기)이 가능하다.
+    
+    인라인블럭의 나열로 레이아웃이 구성되어있다면
+    각 요소 사이에 공간이 생기는데,
+    이는 폰트의 기본 사이즈때문에 생긴다.
+    이를 없애고 싶으면 폰트의 사이즈를 0으로 설정해야한다.
 
-            /* 정사각형 */
-            width: 100px;
-            height: 100px;
-
-            background-color: red;
-            color: white;
-        }
-    </style>
-
-    <div class="box">
-        첫 번째
-    </div>
-    <div class="box">
-        두 번째
-    </div>
+    하지만 우리에겐 css3 레이아웃 전용 속성들이 있으니,
+    굳이 어렵게 돌아가지 말자.
+    -->
+    <div class="box"> 첫 번째 </div>
+    <div class="box"> 두 번째 </div>
 </body>
 
 </html>

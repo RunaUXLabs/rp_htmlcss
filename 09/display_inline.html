@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>inline의 속성 01</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/09/css/display_inline.css">
 </head>
 
 <body>
-    <style>
-        /* 빨강 정사각형 */
-        span {
-            width: 100px;
-            height: 100px;
-
-            background-color: red;
-            color: white;
-        }
-    </style>
-
-    <span>
-        정사각형
-    </span>
+    <!-- inline요소의 대표적인 태그, span
+    피그마의 hug같이 자식의 사이즈에 따라 면적이 설정된다.
+    가로, 세로, 상하마진 css로 선언해도 적용되지 않는다!
+    모든패딩, 좌우 마진은 적용된다!
+    
+    block과 달리 현재 위치한 가로 공간을 본 태그의 면적만큼만
+    차지하며 빈공간에는 다른 inline요소가 올 수 있다(공간만 된다면)
+    inline요소 다음에 block요소가 오면 줄바꿈이 일어나는 원리도
+    이해하고 있어야 퍼블리싱을 통해 레이아웃을 설정 할 수 있다.-->
+    <span> 정사각형 </span>
 </body>
 
 </html>
