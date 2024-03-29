@@ -1,14 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>하이퍼링크의 개념과 응용</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/03/css/a.css">
+
 </head>
 
 <body>
-    <a href="https://www.naver.com">
-        네이버
+    <!-- <a>의 목적은 대상을 클릭하면 목적지로 연결해준다.
+    이를 활용하여 서브페이지, 타 서비스로 연결하면된다.
+    현재는 기본글씨를 링크화 하지만, 추 후 컴포넌트를 <a>로
+    감싸서 해당 컴포넌트 클릭 시 이동하게 만든다. -->
+
+    <!-- 현재탭에서 뜨게 만들기 _self 기본값이라 생략해도 됨 -->
+    <a href="https://www.naver.com"> 네이버 </a>
+
+    <!-- 새탭/새창에서 뜨게 만들기 _blank -->
+    <a href="https://www.naver.com" target="_blank"> 네이버 </a>
+
+    <!-- target값에 4가지 종류가 있지만, 자주쓰는 2개의 값만
+    알고 있으면 된다. 프레임(구역)에 대한 개념이 생기면 그때
+    다시 추가개념을 잡기로 하자. -->
+    <a class="link4face">목적지가 없는 링크입니다</a>
+    <!-- 하이퍼링크의 4가지 모습,
+    기본, hover, 누르고 있을때(active), 눌러봤을때(vidited) -->
+    <a href="https://toss.im" class="link4face">토스로 가는 링크</a>
+    <a href="https://www.kbcard.com/" class="link4face">국민은행으로 가는 링크</a>
+
+
+    <!-- 컨텐츠를 넣어 a태그구성해보기+상태 css 조절하기 -->
+    <a href="https://www.shinhancard.com/" class="boxLink" target="_blank">
+        <div>덩어리
+            <img src="https://lifet-img.s3.ap-northeast-2.amazonaws.com/6b980705-1d57-46a4-8193-ca490d19d00d"
+                alt="태닝중인고양이">
+        </div>
+    </a>
+
+    <!-- a태그를 좀 전 보다 좀더 복잡한 구조로 꾸며서 css 적용해보기 -->
+    <a href="http://www.google.com" class="boxLink2" target="_blank">
+        <div>
+            구글바로가기
+            <img src="https://lifet-img.s3.ap-northeast-2.amazonaws.com/6b980705-1d57-46a4-8193-ca490d19d00d" alt>
+        </div>
     </a>
 </body>
 

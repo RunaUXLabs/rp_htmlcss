@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+/* 
+선택자에 :을 붙이면 상태선택자
+선택자에 ::을 붙이면 가상요소선택자
+a.link4face{ }에 속성을 선언(링크 기본형)해도 되지만,
+현 상태를 세세히 지정하여 속성을 부여할 수 있다. */
+
+/* 일반 링크에 대해 선언 */
+a.link4face {
+  color: grey;
+}
+
+/*
+:visited 의사 클래스로 정의한 스타일은 자신보다 뒤에 위치하고 동등한 명시성을 가진
+다른 링크 의사 클래스(:link, :hover, :active)가 덮어씁니다.
+링크를 적절히 디자인하려면 LVHA-순서(:link — :visited — :hover — :active)를 따라,
+:visited 규칙을 :link 뒤, :hover와 :active 앞에 배치하세요. */
+
+/* href가 있는 경우로 특정짓기 */
+a.link4face:link {
+  color: pink;
+}
+/* 방문한 이력이 있을 때 */
+a.link4face:visited {
+  color: cornflowerblue;
+}
+/* 누르고 있을 때 */
+a.link4face:active {
+  color: brown;
+}
+/* 마우스를 올렸을 때, 내리면 기본형으로 돌아감 */
+a.link4face:hover {
+  color: hotpink;
+}
+
+
+.boxLink div {
+  width: 100px;
+  height: 100px;
+  background: palevioletred;
+  color: white;
+}
+.boxLink div:hover {
+  width: 50px;
+  height: 50px;
+  background: greenyellow;
+}
+/* :visited의 특성은 텍스트 기반으로 이루어진 링크에 적용하기위해 만들어진 상태선택자이다. 일반적인  UI요소의 변화에는 반영이 다 되지는 않는다. 참고자료) https://developer.mozilla.org/ko/docs/Web/CSS/:visited
+
+다만 그 요소안의 텍스트에는 반영된다. */
+
+/* div에 :visited 반영 안되는 것처럼 보임 */
+.boxLink div:visited {
+  background: gray;
+}
+/* 올바른 작성법 */
+.boxLink:visited div {
+  background: gray;
+}
+
+/* 링크에 적용하는 기초기준 상태선택자 4가지.
+(원래는 상태선택자 종류가 많다)
+일반태그에 적용할 수 있는 상태선택자는 기초기준 2개
+일반태그에 :visited를 적용하면 텍스트 변화상태만 확인이 가능하다.
+f12눌러보면 적용은 되어있지만, 시각적으로 확인이 불가하다.
+
+
+올바른 예시)
+div:hover, div:active
+a:link div, a:visited div */
+
+.boxLink > div > img {
+  width: 100%;
+}
+
+/* 테스트 */
+.boxLink2 {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  color: gray;
+}
+.boxLink2 img {
+  width: 100%;
+}
+.boxLink2:hover {
+  width: 150px;
+  color: green;
+}
