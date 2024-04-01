@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 table {
   /* 선과 선이 만나는 부분을 접어라 */
   border-collapse: collapse;
@@ -20,9 +19,7 @@ table.ex02 {
 .bg_y {
   background-color: khaki;
 }
-/* table.ex02 tr:nth-child(1) {
-  background-color: khaki;
-} */
+/* table.ex02 tr:nth-child(1) { background-color: khaki; } */
 table.ex02 tr:first-child {
   background-color: khaki;
 }

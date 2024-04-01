@@ -1,21 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>그라디언트 기초, 선형그라디언트</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        div {
+            /* 그라디언트의 개념: 2개의 상이한 색의 변화값 자동 생성 */
+            /* 속성값으로 사용한 linear-gradient()는 함수이다.
+             이미 css에서 함수에 값만 지정하면 그라디언트를 자동으로 만들어 주기로
+             약속한 것. 직접적으로 그라디언트 소스를 작성하기 보다는
+             generator(생성기)를 통해 초안을 받아와 변형하는 식으로 접근하자 */
+            /* https://cssgradient.io/ */
+
+
+            /* background: linear-gradient(red, blue); */
+            /* 직선 그라디언트 기본값, top-bottom방향, 색의 위치는 양끝 */
+
+            /* background: linear-gradient(to right, red, #00FF00); */
+            /* HEX 코드도 사용 가능 */
+
+
+            /* background: linear-gradient(to bottom right, red, #00FF00); */
+            /* 대각선 각도 지정 */
+
+            /* background: linear-gradient(35deg, red, yellow); */
+            /* 사용자 각도 지정 */
+            background: linear-gradient(red, yellow, blue);
+            /* 여러 색 지정 */
+        }
+    </style>
 </head>
 
 <body>
-    <style>
-        div {
-            background: linear-gradient(red, blue);
-            /* background: linear-gradient(to right, red, #00FF00); HEX 코드도 사용 가능 */
-            /* background: linear-gradient(to bottom right, red, #00FF00); 대각선 각도 지정 */
-            /* background: linear-gradient(35deg, red, yellow); 사용자 각도 지정 */
-            /* background: linear-gradient(red, yellow, blue); 여러 색 지정*/
-        }
-    </style>
 
     <div>
         배경이 그레이디언트입니다.

@@ -1,20 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>영상삽입을 위한 video</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 
 <body>
-    <!-- 컨트롤러 추가 -->
-    <video controls src="Clouds - 64759.mp4"></video>
+    <!-- 영상의 용량과 화질을 비례하므로 이부분에 대한 서비스를 신경써서 넣을 필요가 있다. 저용량 저화질 영상을 사용할 때는 망점을 백그라운드로 깔아서 보정효과를 기대해야하며, 고용량 영상을 사용시 사용자의 네트워크 환경에 따라 끊길 수 있음을 인지하고 대체케이스를 준비해야한다.
+    유투브처럼 외부에 올라가져 있는 영상의 고유주소를 가져와서 게시할 수 있으나, 이부분도 사용자의 네트워크 환경에 영향을 받는다. 외부 영상 파일의 변경에 따라 내가 영향받을 수 있다. -->
 
-    <!-- 오토플레이 추가(크롬브라우저) -->
-    <video autoplay muted src="Clouds - 64759.mp4"></video>
+    <!-- controls 속성: 컨트롤러 추가
+    사용자에게 권한을 부여하지 않고 일방적인 노출을 원할때 컨트롤러를 뺀다 -->
+    <video controls src="Clouds-64759.mp4"></video>
 
-    <!-- 섬네일 추가 -->
-    <video poster="rch83p_vfba-1mgnhrg_logo.png" src="Clouds - 64759.mp4"></video>
+    <!-- 오토플레이 추가(크롬브라우저) - 음소거 muted와
+    셋트구성으로 사용! 다른브라우저는 영향력이 크지 않다.
+    하지만 사용자 경험이 자동재생+음소거에 초점이 맞춰져
+    있는것을 감안하여 브라우저를 신경쓰지 않더라도 셋트를 맞춰주자. -->
+    <video autoplay muted src="Clouds-64759.mp4"></video>
+    <!-- 오토플레이는 1회 재생을 기본으로 하고있다.
+    loop를 통해 반복재생을 걸 수는 있다.
+    그러나 유투브는 반복재생에 대한 옵션을 매 업데이트 마다
+    금지를 하고 있다(수익창출이슈). 자동재생을 선택하던지,
+    반복재생을 선택하던지 골라야 함 -->
+    <video autoplay muted loop src="Clouds-64759.mp4"></video>
+
+    <!-- poster 속성: 영상의 섬네일 추가, 이를 클릭하면(controls 속성있을경우)
+    영상이 로딩되어 플레이 되게 한다. 무거운 영상을 다 읽어오지 않고 화면을
+    로딩할 수 있게 만듦으로 전체 컨텐츠 로딩속도 개선에 약간의 영향을 준다. -->
+    <video poster="rch83p_vfba-1mgnhrg_logo.png" src="Clouds-64759.mp4" controls></video>
+
+
+    <!-- 유투브 영상 넣어보기(퍼가기 옵션사용), 쇼츠는 삽입불가 -->
+    <!-- iframe 태그를 이용하여 유투브 영상을 삽입할 수 있다.
+    각 속성값을 이해하고 조정하면 되고, 해당 태그를 퍼가는 형식(기초)보다는
+    API를 활용(세부옵션 컨트롤 가능함)하여 삽입할 수 있도록 한다.
+    크기는 css를 통해 수정하기로 한다. 기본값은 16:9 비율로 자동 조정(상하 검은바)됨  -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LPBdHyeWgFI?si=U3pZN9kXcY1HNI2f&amp;controls=0"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe width="1920" height="800" src="https://www.youtube.com/embed/xRS1KQ6Hnpg?si=JGWX4Vgtmx5bXlOJ&amp;controls=0"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </body>
 
 </html>

@@ -1,23 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>원형 그라디언트</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-</head>
-
-<body>
     <style>
         div {
-            background: radial-gradient(blue, red, yellow);
-            /* background: radial-gradient(blue 10px, red 20px, yellow 50px); 색마다 크기 지정 */
-            
+            /* background: radial-gradient(blue, red); */
+            /* background: radial-gradient(blue, red, yellow); */
+            /* 방사형 그라디언트 기본값, 중앙-외곽방향, 색의 위치는 중심-객체 외곽, 동심원 형식이라 각도는 의미가 없다 */
+
+            background: radial-gradient(blue 10px, red 20px, yellow 50px);
+            /* 색마다 크기 지정(색이 삽입되는 위치, 중심으로부터 멀어지는 위치라고 이해),
+            수치의 단위는 다양하게 사용가능! */
+
             width: 100px;
             height: 100px;
         }
     </style>
+</head>
 
+<body>
     <div></div>
+
+
 </body>
 
 </html>

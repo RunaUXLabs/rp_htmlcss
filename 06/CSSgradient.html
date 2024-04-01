@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>그라디언트 생성기 활용</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-</head>
-
-<body>
     <style>
         div {
             /* 복사한 그라디언트 속성 */
             background: rgb(103, 213, 146);
             background: radial-gradient(circle, rgba(103, 213, 146, 1) 0%, rgba(232, 98, 98, 1) 50%, rgba(241, 253, 45, 1) 100%);
-            
+
             /* 호환성 버전의 그라디언트
             background: rgb(103, 213, 146);
             background: -moz-radial-gradient(circle, rgba(103, 213, 146, 1) 0%, rgba(232, 98, 98, 1) 50%, rgba(241, 253, 45, 1) 100%);
@@ -24,12 +22,26 @@
             /* 높이 100px */
             height: 100px;
         }
+
+        /* h1 {
+            color: #fff;
+            background: rgb(40, 60, 134);
+            background: linear-gradient(124deg, rgba(40, 60, 134, 1) 0%, rgba(69, 162, 71, 1) 100%);
+        } */
+
+        /* 두루누비 그라디언트 샘플 dev모드로 확인 */
+        h1 {
+            background: radial-gradient(139.74% 115.44% at 100% 100%, #9BCC94 0%, #239D9D 33.06%, #2F87A5 60.91%, rgba(31, 107, 133, 0.25) 88.27%, rgba(31, 107, 133, 0.00) 100%), radial-gradient(89% 89% at 7.79% 11%, #1C3C79 0%, #33A0CB 100%);
+        }
     </style>
+</head>
+
+<body>
 
     <div></div>
-    <h1>
-        직접 만든 그라디언트
-    </h1>
+
+    <!-- 클래스 명 분리(선택자 분리)해서 생성기 총동원, 본인이 생각하는 가장 괜찮은 그라디언트 만들어보기, 피그마의 fill을 통해 구현해도 됨  -->
+    <h1> 직접 만든 그라디언트 </h1>
 </body>
 
 </html>
