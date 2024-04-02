@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>자간</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-</head>
-
-<body>
     <style>
         h1 {
             letter-spacing: 0px;
+            /* 0px이라고 해서 딱붙은 느낌으로 이해하면 곤란. 기본값! */
         }
 
         h2 {
@@ -18,18 +17,17 @@
 
         h3 {
             letter-spacing: -2px;
+            /* 음수를 사용할 수 있다. 음수값이 커질수록 글씩 겹쳐지며,
+            폰트의 사이즈를 넘어서면 Y축을 기준으로 뒤집어진 형태를 보인다.
+            뒤집어지고도 값이 커진다면 그상태에서 자간이 벌어진다. */
         }
     </style>
+</head>
 
-    <h1>
-        기본 자간
-    </h1>
-    <h2>
-        자간이 8px!
-    </h2>
-    <h3>
-        자간이 -2px!
-    </h3>
+<body>
+    <h1> 기본 자간 </h1>
+    <h2> 자간이 8px! </h2>
+    <h3> 자간이 -2px! </h3>
 </body>
 
 </html>

@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+:root {
+  font-size: 16px;
+}
+/* 태그의 계위를 설계에 맞춰 배분하고 각 태그에 여러사이즈를 사용하는 것은 디자인적인 허용으로 보면 된다.
+하지만 누가봐도 ???를 띄우는 디자인적 표현은 지양할 것
+*/
+h1 {
+  font-size: 12px;
+}
+h6 {
+  font-size: 32px;
+}
+/* 절대적인 고정값을 사용할 땐, px */
+
+.rem_ex {
+  font-size: 1.5rem;
+}
+/* 루트(근본 html :root)을 따르는 단위, rem */
+
+.em_ex {
+  font-size: 20px;
+}
+.em_ex > span {
+  font-size: 3em;
+}
+.em_ex2 {
+  font-size: 30px;
+}
+.em_ex2 > div {
+  font-size: 1.6em;
+}
+.em_ex2 > div > span {
+  font-size: 1.6em;
+}
+
+/* 부모(기준을 부여하는 조상을 지칭)을 따르는 단위, em */
+
+
+
+
+/* 단위를 고민할 때는? 8단위, 4단위로 설정하면 지글거림이 없음, 디자인시스템이 기본으로 설정되어있음 */

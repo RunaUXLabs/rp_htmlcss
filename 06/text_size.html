@@ -1,27 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>텍스트 크기</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/06/css/text_size.css">
 </head>
 
 <body>
-    <style>
-        h1 {
-            font-size: 12px;
-        }
-        h6 {
-            font-size: 32px;
-        }
-    </style>
+    <h1> 원래는 가장 큰 </h1>
+    <h6> 원래는 가장 작은 </h6>
+    <div>기준글씨</div>
 
-    <h1>
-        원래는 가장 큰
-    </h1>
-    <h6>
-        원래는 가장 작은
-    </h6>
+    <!-- rem예제 -->
+    <div class="rem_ex">그냥글씨</div>
+
+    <!-- em예제 -->
+    <div class="em_ex">
+        그냥글씨
+        <span>부모를 따르는 em</span>
+    </div>
+
+    <div class="em_ex2">
+        그냥글씨
+        <div>
+            중간에 낀 글씨
+            <span>영향을 중첩으로 받는 글씨</span>
+        </div>
+    </div>
+
 </body>
 
 </html>

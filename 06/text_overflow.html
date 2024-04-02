@@ -1,34 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>말줄임표 ... ellipsis</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/06/css/text_overflow.css">
 </head>
 
 <body>
-    <style>
-        /* 모두 다 white-space: pre 적용 */
-        * {
-            white-space: pre;
-            overflow: hidden;
-        }
-        h1 {
-            /* 기본값, 그대로 잘린다. */
-            text-overflow: clip;
-        }
-        h2 {
-            /* ... 으로 대체 */
-            text-overflow: ellipsis;
-        }
-    </style>
-     
-    <h1>
-        넘치며 잘리는 텍         스         트
-    </h1>
-    <h2>
-        넘치며 잘리는 텍         스         트
-    </h2>    
+    <!-- 기본 ellipsis 표현은 1줄에서 적용된다. -->
+    <h1> 넘치며 잘리는 텍 스 트 넘치며 잘리는 텍 스 트 넘치며 잘리는 텍 스 트 </h1>
+    <h2> 넘치며 잘리는 텍 스 트 넘치며 잘리는 텍 스 트 넘치며 잘리는 텍 스 트 </h2>
+
+    <!-- mutiline ellipsis -->
+    <p class="substance">
+        네이버랩스 유럽 연구소장인 마틴 휴멘버거(Martin Humenberger)은 지난 단23 세션에서 '로봇을 위한 AI'에 대해 발표하며 다음과 같이 말한 바 있습니다.
+
+        "제어되지 않은 환경에서 로봇이 자율적으로 작업을 수행하는 것은 너무나 어렵죠. 제어가 안된다는 건 예상할 수 없다는 의미거든요. 그런데 파운데이션 모델(Foundation Model)로 이 한계를
+        돌파할 수 있습니다."
+    </p>
 </body>
 
 </html>

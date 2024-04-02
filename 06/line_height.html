@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>텍스트 행간 line-height 01</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-</head>
-
-<body>
     <style>
         div {
             /* div 내의 모든 폰트 크기 100px */
             font-size: 100px;
-            
-            /* line-height: 100px; 문자 높이를 100%, font-size와 동일하게 설정*/
+
+            line-height: 100px;
+            /* 문자 높이를 100%, font-size와 동일하게 설정 */
         }
 
         .box {
@@ -28,16 +27,15 @@
             background: yellow;
         }
     </style>
+</head>
+
+<body>
 
     <div class="box">
         <!-- 한글 가 -->
-        <div class="a">
-            가
-        </div>
+        <div class="a"> 가 </div>
         <!-- 영문 가 -->
-        <div class="b">
-            g
-        </div>
+        <div class="b"> g </div>
     </div>
 </body>
 

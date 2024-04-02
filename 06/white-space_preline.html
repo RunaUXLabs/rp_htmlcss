@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>공백처리 white-space: pre-line;</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-</head>
-
-<body>
     <style>
         h1 {
             white-space: pre-line;
         }
     </style>
+</head>
 
+<body>
+    <!-- 수많은 태그의 중첩, 이딴식으로 쓰지 말 것. 단순 예시일 뿐 -->
     <h1>
         <h1>
             <h1>
@@ -27,7 +28,7 @@
                                             줄바꿈도 정상 작동
                                         </h1>
                                         <h1>
-                                            하지만 동시에 띄어쓰기는        이제          불가능!
+                                            하지만 동시에 띄어쓰기는 이제 불가능!
                                         </h1>
                                     </h1>
                                 </h1>
