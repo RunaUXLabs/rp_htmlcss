@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: maru-buri;
+  font-weight: 200;
+  src: url('/fonts/MaruBuri-ExtraLight.ttf');
+  /* 저 위치에 폰트파일을 넣고 서버에 업로드 해야지 해당 사이트에 방문한
+  사용자는 지정한 폰트로 웹페이지를 볼 수 있다.
+  파일이 없으면 기본 폰트로 변환되니 경로며 파일 확인 잘 하기. */
+}
+
+@font-face {
+  font-family: maru-buri;
+  font-weight: 300;
+  src: url('/fonts/MaruBuri-Light.ttf');
+}
+
+@font-face {
+  font-family: maru-buri;
+  src: url('/fonts/MaruBuri-Regular.ttf');
+}
+
+@font-face {
+  font-family: maru-buri;
+  font-weight: 600;
+  src: url('/fonts/MaruBuri-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: maru-buri;
+  font-weight: 700;
+  src: url('/fonts/MaruBuri-Bold.ttf');
+}
+
+div {
+  font-family: maru-buri, sans-serif;
+}
+
+span {
+  font-family: maru-buri, sans-serif;
+  /* bold 와 동일 */
+  font-weight: 700;
+}

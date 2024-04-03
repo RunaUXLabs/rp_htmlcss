@@ -19,16 +19,17 @@ h2 {
     줄 수만큼 곱해서 max-height 값을 설정해 준다. */
 
 p.substance {
-  /* width: 50%;
-  height: 150px; */
+  /* width: 50%; */
+  height: 700px;
   border: 2px solid pink;
 
   overflow: hidden;
   text-overflow: ellipsis;
+
   /* 웹킷계열 벤더프리픽스 -webkit-  */
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 5;
   line-height: 1.5;
-  max-height: 3rem;
+  max-height: 7.5rem;
 }

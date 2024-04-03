@@ -1,45 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>css로 리스트 스타일 변경하기 02</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/06/css/list-style-type2.css">
 </head>
 
 <body>
-    <style>
-        ol {
-            /* 일반 텍스트로 변경 */
-            list-style-type: '글자 ';
-        }
-
-        ul {
-            /* 이모지로 변경 */
-            list-style-type: '😊';
-        }
-    </style>
     <ul>
-        <li>
-            순서가
-        </li>
-        <li>
-            없는
-        </li>
-        <li>
-            리스트
-        </li>
+        <li> 순서가 </li>
+        <li> 없는 </li>
+        <li> 리스트 </li>
     </ul>
     <ol>
-        <li>
-            순서가
-        </li>
-        <li>
-            있는
-        </li>
-        <li>
-            리스트
-        </li>
+        <li> 순서가 </li>
+        <li> 있는 </li>
+        <li> 리스트 </li>
     </ol>
+
+    <!-- 가상요소를 활용하여 마음대로 조절하기 -->
+    <ul class="pseudo-element">
+        <li> 순서가sdfsdfdsd </li>
+        <li> 없sdfgsdgasdgsdgsadfgasfgasdgagaesg는 </li>
+        <li> 리스트 </li>
+    </ul>
 </body>
 
 </html>

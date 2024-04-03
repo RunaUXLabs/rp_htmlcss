@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>css로 리스트 스타일에 그라디언트 넣기</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-</head>
-
-<body>
     <style>
         ol {
             /* 그라디언트로 변경 */
             list-style-image: linear-gradient(to left bottom, red, blue);
+            /* 따로 모양을 설정하지 않았는데 가로세로 8px정도의 네모로 구현됨,
+            ol은 숫자임에도 불구하고 list-style-image를 사용하면 네모 표시  */
         }
     </style>
+</head>
+
+<body>
     <ol>
-        <li>
-            그라디언트
-        </li>
-        <li>
-            리스트
-        </li>
+        <li> 그라디언트 </li>
+        <li> 리스트 </li>
     </ol>
 </body>
 

@@ -1,40 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>css로 리스트 스타일 변경하기 01</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        /* <ol> 태그, <ul> 태그 모두 decimal로 변경해 다 타입을 숫자로 바꾸기 */
+        ol,
+        ul {
+            /* list-style-type: decimal; */
+
+            /* list-style-type: lower-roman; */
+            list-style: lower-roman;
+            /* 속성명이 어쩌구-저쩌구라면 어쩌구: 속성값으로 통합선언가능!
+            저쩌구는 어쩌구의 하위 식구개념 */
+
+            /* 예시)
+            margin-top: 20px;
+            margin-left: 30px;
+            와
+            margin: 20px 0 0 30px;는 같다 */
+        }
+    </style>
 </head>
 
 <body>
-    <style>
-        /* <ol> 태그, <ul> 태그 모두 다 타입을 숫자로 바꾸기 */
-        ol,
-        ul {
-            list-style-type: decimal;
-        }
-    </style>
     <ul>
-        <li>
-            순서가
-        </li>
-        <li>
-            없는
-        </li>
-        <li>
-            리스트
-        </li>
+        <li> 순서가 </li>
+        <li> 없는 </li>
+        <li> 리스트 </li>
     </ul>
     <ol>
-        <li>
-            순서가
-        </li>
-        <li>
-            있는
-        </li>
-        <li>
-            리스트
-        </li>
+        <li> 순서가 </li>
+        <li> 있는 </li>
+        <li> 리스트 </li>
     </ol>
 </body>
 

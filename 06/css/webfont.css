@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* 구글 noto 폰트 */
+/* @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+div {
+    font-family: 'Noto Sans KR', sans-serif;
+} */
+
+/* 눈누 수박화체 설정 */
+/* 눈누는 @import url()말고 @font-face만 사용할 것, 교재에 나오는 예시랑 다르니 잘 확인하기 */
+/* @font-face {
+  font-family: 'EF_watermelonSalad';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-EF@1.0/EF_watermelonSalad.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+div {
+  font-family: 'EF_watermelonSalad';
+} */
+
+/* 구글 Moirai One 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Moirai+One&display=swap');
+div {
+  font-family: "Moirai One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
