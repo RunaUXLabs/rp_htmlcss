@@ -1,21 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>태그에 지정하는 최대높이</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-</head>
-
-<body>
     <style>
         h3 {
             /* 구분을 위한 배경색 */
             background: antiquewhite;
             max-height: 60px;
-            
-            /* overflow: hidden; 요소 내용이 밖으로 넘치면 자름*/
+
+            overflow: hidden;
+            /* 요소 내용이 밖으로 넘치면 자름 */
+
+            overflow-y: auto;
+            overflow-x: auto;
+            overflow: auto;
+            /* 넘치는 컨텐츠 스크롤 처리, overflow가 필수값 */
         }
     </style>
+</head>
+
+<body>
 
     <h3>
         중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠
