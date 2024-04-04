@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>overflow 02</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-</head>
-
-<body>
     <style>
         h2 {
             /* 폭 18px */
@@ -20,13 +18,14 @@
             overflow: hidden;
         }
     </style>
+</head>
 
-    <div>
-        가로 세로로 잘린 텍스트
-    </div>
-    <h1>
-        가로
-    </h1>
+<body>
+    <!-- overflow: hidden;은 글씨도 썰어버린다.
+    자식이 어떤 종류든 상관없이 부모 사이즈에 걸려
+    넘치게 되면 바로 감춰버린다. -->
+    <div> 가로 세로로 잘린 텍스트 </div>
+    <h1> 가로 </h1>
     <h2>
         세<br>로
     </h2>

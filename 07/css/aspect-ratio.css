@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+div {
+  /* 가로는 부모 폭의 50% */
+  width: 50%;
+  /* 가로세로의 비는 1이다 즉 같다 */
+  /* aspect-ratio: 1; */
+  background: beige;
+}
+
+
+div {
+  width: 100%;
+  aspect-ratio: 1920 / 1080;
+  /* 가로세로의 비율은 1920 * 1080, Full HD 모니터의 비율과 같다 */
+
+  /* height: 100vh; */
+}

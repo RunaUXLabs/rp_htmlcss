@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+div {
+  /* 한 변이 40px인 사각형 */
+  width: 40px;
+  height: 40px;
+  /* 배경색 */
+  background: antiquewhite;
+  /* 벗어나도 보인다, 기본값 */
+  overflow: visible;
+
+  /* overflow: hidden; */
+  /* 벗어나면 숨긴다 */
+}
+
+/* 자식 요소 추가 */
+h1 {
+  width: 10px;
+  height: 100px;
+  /* 높이는 부모를 초과하여 벗어난다 */
+  background: aquamarine;
+}

@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+h1 {
+  /* overflow: scroll; */
+
+  overflow-x: hidden;
+  /* hidden 부모기준으로 썰기 */
+
+  /* overflow-y: scroll; */
+  /* 세로 스크롤 적용 */
+  /* scroll은 자식의 양과 상관없이 무조건 스크롤 생성 */
+
+
+  overflow-y: auto;
+  /* auto는 자식의 양이 부모보다 많으면 스크롤 생성,
+  적으면 스크롤이 제거됨. 알아서 함. */
+
+  width: 100px;
+  height: 100px;
+  /* overflow 선언을 할 때에는 부모의 사이즈가 정해져 있어야 함.
+  그 사이즈가 px, % 등 단위는 상관없이 쓸 수 있음
+
+  예시) 브라우저(디바이스크기)를 따라가는 부모섹션.
+  그 섹션 안에 2개의 div, 각 div의 크기는 w 50%, h 100%
+  이런식으로 사이즈를 지정하는 단위는 상대적/절대적 상관없이
+  지정만 되어있으면 된다.
+  
+  hug의 개념(auto)일 때엔 스크롤 처리가 의미가 없음 */
+}
+
+h2 {
+  overflow: scroll;
+  /* 가로로도 스크롤이 의미 있도록 */
+  white-space: nowrap;
+  width: 100px;
+  height: 100px;
+}
