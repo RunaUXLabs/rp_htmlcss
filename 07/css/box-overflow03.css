@@ -3,7 +3,6 @@
 h1 {
   /* overflow: scroll; */
 
-  /* overflow: hidden auto */
   overflow-x: hidden;
   /* hidden 부모기준으로 썰기 */
 

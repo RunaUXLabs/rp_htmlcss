@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+* {
+  outline: 1px solid red;
+}
+
+div {
+  width: 300px;
+  height: 300px;
+  background-image: url(/07/images/logo.svg);
+  /* background-repeat: repeat; */
+  /* 배경 이미지 x, y 반복, repeat이 기본값 */
+
+  background-repeat: no-repeat;
+  /* 배경 이미지 x, y 반복 안 함 */
+
+  /* background-repeat: repeat no-repeat; */
+  /* 가로 반복, 세로 미반복 */
+  /* background-repeat: no-repeat repeat; */
+  /* 가로 미반복, 세로 반복 */
+
+  /* 속성값 선언에서 공백이 들어갔다는 것은
+  다른 종류의 선언을 여려개 한다는 의미 */
+}
+
+h1 {
+  /* 폭 500px */
+  width: 500px;
+  /* 높이 300px */
+  height: 300px;
+  /* 배경 이미지 */
+  background-image: url(/07/images/logo.svg);
+  /* 배경 이미지 y(세로)만 반복 */
+  background-repeat: repeat-y;
+}
+
+h2 {
+  /* 폭 500px */
+  width: 500px;
+  /* 높이 300px */
+  height: 300px;
+  /* 배경 이미지 */
+  background-image: url(/07/images/logo.svg);
+  /* 배경 이미지 x(가로)만 반복 */
+  background-repeat: repeat-x;
+}

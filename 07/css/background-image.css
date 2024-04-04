@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+div {
+  width: 150px;
+  height: 150px;
+  /* background-image: url(/07/images/ruby.jpg); */
+  /* 배경 이미지 */
+  /* background-image의 값으로는 url() 함수를 불러와
+  값(인자, 이미지 경로)를 넣어주는 식 */
+
+  /* 속성명-어쩌구: 값; 값은 무조건 1개
+  속성명: 값; 다수의 값이 적혀있으며 안 보인건 기본값 대체 */
+
+  /* background: url(/07/images/ruby.jpg);로 작성해도 되며,
+  이미지의 위치, 반복여부가 기본값으로 적용되어있어서 생략가능! */
+
+
+
+  /* background-image: url(/07/images/logo.svg); */
+  /* 투명한 배경 이미지 */
+  /* background-color: antiquewhite; */
+  /* 비교를 위한 배경색 설정  */
+  /* background: antiquewhite url(/07/images/logo.svg); */
+  /* background: url(/07/images/logo.svg) antiquewhite; */
+  /* 순서 상관없이 이렇게 쓸 수 있다 */
+
+
+  /* background-image: url(/07/images/ruby.jpg), url(/07/images/logo.svg); */
+  /* 두 개의 배경 이미지 - 로고가 뒤로 가서 안보임 */
+  /* background-image: url(/07/images/logo.svg), url(/07/images/ruby.jpg); */
+  /* 두 개의 배경 이미지 - 순서 바꿈, 루비가 뒤로감 */
+  /* 여러개의 배경 이미지를 사용할 수 있다. 먼저쓴 애가 앞에 나와있음 */
+
+  /* 가능성 확인) 하나의 선언에 몰아넣기 */
+  /* background: 이미지와 세부속성 셋트01, 이미지와 세부속성 셋트02 컬러값; */
+  /* background: url(/07/images/logo.svg), url(/07/images/cat.png) antiquewhite; */
+  /* 색상 하나에 배경이미지 여러개를 깔 때에는 background 축약형으로 선언하기 보다는
+  개별선언하여 중첩하는 식이 가독성이 좋음 */
+  /* background-image: url(/07/images/logo.svg), url(/07/images/cat.jpg);
+  background-color: antiquewhite; */
+
+  /* background-image: linear-gradient(red, blue); */
+  background: linear-gradient(red, blue);
+  /* 그레이디언트 배경 */
+}

@@ -1,25 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>배경색상 background-color</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        div {
+            width: 150px;
+            height: 150px;
+            /* 백그라운드 속성을 선언할 때에는 면적이 있어야 함.
+            면적이 없으면 자식만큼 벌어지는 hug이므로 원하는 만큼 안보임.
+            백그라운드 속성선언이 유효/무효의 범위로 논해지는 것이 아니라
+            화면에서 보임/안보임으로 구분되는것이지 적용이 안 된 것은 아님. */
+
+            /* 배경색 */
+            background: bisque;
+            /* background-color: bisque; */
+            /* background-어쩌구(6개)로 되어있으며, 컬러는 1대장이므로
+            background: 색상값; 이렇작성해도 적용된다. */
+
+            /* background-color: rgba(103, 213, 146, 1); rgba 값의 배경색*/
+            /* opacity를 담당하는 alpha값은 0~1사이의 숫자. 0투명- 1솔리드 */
+        }
+    </style>
 </head>
 
 <body>
-    <style>
-        div {
-            /* 폭 150px */
-            width: 150px;
-            /* 높이 150px */
-            height: 150px;
-            /* 배경색 */
-            background-color: bisque;
-            
-            /* background-color: rgba(103, 213, 146, 1); rgba 값의 배경색*/
-        }
-    </style>
-
     <div></div>
 </body>
 

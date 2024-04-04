@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+div {
+  width: 500px;
+  height: 300px;
+  background-image: url(/07/images/cat.png);
+  /* background-size를 선언하지 않으면 이미지가 가지고 있는 원본사이즈 그대로 적용!
+  이미지보다 부모가 크면 반복을 통해 채움
+  이미지가 부모보다 크면 짤려 */
+
+  /* background-size: 100%; */
+  /* 값이 1개일 때는 요소의 폭에 맞춰짐 */
+
+  background-size: 100% 100%;
+  /* 배경 이미지가 요소에 딱 맞게 설정 */
+
+  /* background-size: contain;  배경 이미지가 요소에 딱 맞으며 비율이 유지되도록 설정 */
+  /* background-size: cover; 배경 이미지가 잘리더라도 요소를 가득 채우게 설정 */
+
+}
