@@ -1,45 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>마진겹침 2</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-</head>
-
-<body>
     <style>
         h1 {
-            /* 100px 정사각형 */
             width: 100px;
             height: 100px;
+            background-color: aquamarine;
 
             /* 하단 겉 여백 10px */
             margin-bottom: 10px;
-
-            /* 배경색 */
-            background-color: aquamarine;
         }
 
         h2 {
-            /* 100px 정사각형 */
             width: 100px;
             height: 100px;
+            background-color: antiquewhite;
 
             /* 상단 겉 여백 20px */
             margin-top: 20px;
-
-            /* 배경색 */
-            background-color: antiquewhite;
         }
     </style>
+</head>
 
-    <h1>
-
-    </h1>
-    <!-- 한쪽은 10px 한쪽은 20px -->
-    <h2>
-
-    </h2>
+<body>
+    <h1> </h1>
+    <!-- 한쪽은 10px 한쪽은 20px, 상하 마진 겹침이 일어난다.
+        큰 값을 가지는 요소가 작은 부분을 먹어치운다고 이해하면 된다.
+        의도한 대로 마진이 누적되어 벌어질 것이라 생각하지 말자!
+        좌우마진은 겹치지 않는다!
+    
+        🔥flex에서는 자식의 마진을 무조건 지켜줌!(마진겹침 일어나지 않음)
+    -->
+    <h2> </h2>
 </body>
 
 </html>

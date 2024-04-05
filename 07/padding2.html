@@ -1,53 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>padding이 부여된 객체들의 면적관계</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-</head>
-
-<body>
     <style>
         h1 {
+            background-color: aquamarine;
             /* h1 태그의 기본 겉 여백 제거 */
             margin: 0;
-
-            /* 하단 속 여백 10px */
             padding-bottom: 10px;
-
-            /* 배경색 */
-            background-color: aquamarine;
         }
 
         h2 {
+            background-color: antiquewhite;
             /* h2 태그의 기본 겉 여백 제거 */
             margin: 0;
-
             /* 상단 속 여백 20px */
             padding-top: 20px;
-
-            /* 배경색 */
-            background-color: antiquewhite;
         }
 
-        div {
-            /* 100px 정사각형 */
+        span {
             width: 100px;
             height: 100px;
+            display: inline-block;
             background-color: blue;
         }
     </style>
+</head>
 
+<body>
+    <!-- 헤딩태그 안에는 div를 넣을 수 없음, 수정한 샘플로 대체 -->
     <h1>
-        <div>
-
-        </div>
+        <span>내용</span>
     </h1>
     <!-- 한쪽은 10px 한쪽은 20px 속 여백으로 인한 두 요소의 거리는 총 30px -->
     <h2>
-        <div>
-
-        </div>
+        <span>내용</span>
     </h2>
 </body>
 

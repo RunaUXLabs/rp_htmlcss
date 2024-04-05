@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  /* 꼭짓점 둥근 정도 50% 가 넘어가면 원 */
+  /* 윗부분 꼭짓점은 모두 둥글게 */
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  overflow: hidden;
+}
+
+p {
+  width: 100px;
+  height: 100px;
+  border: 10px solid green;
+  /* 사선으로 마주보는 구간만 굴리기 */
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+/* 원을 표시하는 8개의 포인트를 수정하여 다양한 곡률을 구현 할 수 있다 */
+.radius5 {
+  display: inline-block;
+  padding: 40px 0;
+  text-align: center;
+  background-color: darkturquoise;
+  width: 490px;
+  /* border-radius: 15px / 70px; */
+  border-radius: 15px 70px 15px 70px / 70px 15px 70px 15px;
+  /* 시계방향(좌상단-우상단-우하단-좌하단)으로 돌아간다.
+  좌상단 가로:15 세로:70
+  우상단 가로:70 세로:15
+  우하단 가로:15 세로:70
+  좌하단 가로:70 세로:15로 지정한다는 뜻이고,
+  중심기준 반지름 기준으로 매번 다르게(4개의 코너 2개셋트)잡아 면이 꺾이도록 표현하면 손그림 도형이 나온다 */
+}

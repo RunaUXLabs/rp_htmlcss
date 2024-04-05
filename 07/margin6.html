@@ -1,35 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>margin의 auto 적용</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-</head>
-
-<body>
     <style>
         div {
             background-color: antiquewhite;
-            /*height: 300px; div 요소에 높이 지정 */
+            /* height: 300px; */
+            /* div 요소에 높이 지정을 해서 상하공간에 여유가 생겨도
+             객체가 세로 중앙으로 오지 않는다.
+             나중에 flex를 이용하여 정렬을 하거나, position과 translate를 이용하여
+             자동중앙에 배치할 수 있다. */
         }
 
         h1 {
-            /* 100px 정사각형 */
             width: 100px;
             height: 100px;
-
-            /* auto일 경우 최대한 떨어지려고 함. */
-            margin: auto;
-
-            /* 배경색 */
             background-color: aquamarine;
+
+            /* auto일 경우 좌우 잉여 공간을 auto가 n분할 해서 부여된다.
+            상하에는 적용이 되지 않으니 넣어도 의미없다. */
+            margin: auto;
+            /* margin: 0 auto; */
         }
     </style>
+</head>
 
+<body>
     <div>
-        <h1>
-
-        </h1>
+        <h1>타이틀</h1>
     </div>
 </body>
 

@@ -1,39 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>box-sizing 일괄적용</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-</head>
-
-<body>
     <style>
-        /* 모든 요소 대상으로 box-sizing 설정 */
+        /* 모든 요소를 대상으로 box-sizing 설정 */
         * {
             box-sizing: border-box;
         }
 
         div {
-            /* 150px 정사각형 */
             width: 150px;
             height: 150px;
-
-            /* 속 여백 16px */
             padding: 16px;
-
-            /* 배경색 */
             background-color: aquamarine;
         }
 
         h1 {
-            /* 150px 정사각형 */
             width: 150px;
             height: 150px;
-
-            /* 속 여백 32px */
             padding: 32px;
-
-            /* 배경색 */
             background-color: beige;
 
             /* <div> 태그와 동일한 텍스트 스타일 */
@@ -41,13 +29,11 @@
             font-weight: normal;
         }
     </style>
+</head>
 
-    <div>
-        서로 다른 태그도
-    </div>
-    <h1>
-        width와 height가 바로 적용된다!
-    </h1>
+<body>
+    <div> 서로 다른 태그도 </div>
+    <h1> width와 height가 바로 적용된다! </h1>
 </body>
 
 </html>
