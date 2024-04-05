@@ -1,32 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>외곽선 스타일 border-style</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            border-color: red;
+            border-width: 10px;
+
+            /* 총 8가지 스타일이 있으며 입체 4종은 선의 색상 기준으로 빛의 방향에 따라 입체감이 표현된다. */
+            border: outset;
+            /* border-style: outset; */
+        }
+    </style>
 </head>
 
 <body>
-    <style>
-        div {
-            /* 폭 100px */
-            width: 100px;
-            /* 높이 100px */
-            height: 100px;
-            /* 실선 테두리 튀어나오도록 */
-            border: outset;
-            /* 빨강 테두리 */
-            border-color: red;
-            /* 폭 10px 테두리 */
-            border-width: 10px;
-            /* 배경색 빨강 */
-            background-color: red;
-        }
-    </style>
-
-    <div>
-
-    </div>
+    <div> </div>
 </body>
 
 </html>

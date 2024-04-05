@@ -1,30 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>외곽선 이미지 적용 border-image</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            border: solid;
+            border-width: 30px;
+
+            /* 그라디언트 테두리 */
+            border-image: linear-gradient(0deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%) 1;
+            /* 이미지를 넣을 수 있지만 신경써야하는 옵션이 너무 많으니, 그라디언트라도 잘 작용해 보기 */
+        }
+    </style>
 </head>
 
 <body>
-    <style>
-        div {
-            /* 폭 100px */
-            width: 100px;
-            /* 높이 100px */
-            height: 100px;
-            /* 실선 테두리 */
-            border: solid;
-            /* 그라디언트 테두리 */
-            border-image: linear-gradient(0deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%) 1;
-            /* 폭 10px 테두리 */
-            border-width: 10px;
-        }
-    </style>
-
-    <div>
-
-    </div>
+    <div> </div>
 </body>
 
 </html>

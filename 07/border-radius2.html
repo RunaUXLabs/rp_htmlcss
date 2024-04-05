@@ -22,11 +22,35 @@
             /* 밖으로 나가면 숨겨지도록 */
             overflow: hidden;
         }
+
+        p {
+            width: 100px;
+            height: 100px;
+            border: 10px solid green;
+            border-top-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+
+        .radius5 {
+            display: inline-block;
+            padding: 40px 0;
+            text-align: center;
+            background-color: darkturquoise;
+            width: 490px;
+            /* border-radius: 15px / 70px; */
+            border-radius: 15px 70px 15px 70px / 70px 15px 70px 15px;
+            /* 시계방향(좌상단-우상단-우하단-좌하단)으로 돌아간다.
+            좌상단 가로:15 세로:70
+            우상단 가로:70 세로:15
+            우하단 가로:15 세로:70
+            좌하단 가로:70 세로:15로 지정한다는 뜻이고,
+            중심기준 반지름 기준으로 매번 다르게(4개의 코너 2개셋트)잡아 면이 꺾이도록 표현하면 손그림 도형이 나온다 */
+        }
     </style>
-       
-    <div>
-        안녕하세요!
-    </div>    
+
+    <div> 안녕하세요! </div>
+    <p> 청주시청을 표현하고 싶었지만 더 납작해질 수 없음 </p>
+    <span class="radius5"> 찌글찌글한 도형만들기 </span>
 </body>
 
 </html>
