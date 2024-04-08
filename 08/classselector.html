@@ -1,22 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>레이아웃에 반복 사용용도로 만드는 클래스선택자</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-</head>
-
-<body>
     <style>
-        /* 클래스 선택자 */
-        .square {
-            /* 폭 100px */
-            width: 100px;
-
-            /* 높이 100px */
-            height: 100px;
-        }
-
         /* 아이디 선택자 */
         #blueBox {
             /* 배경색 */
@@ -24,21 +13,58 @@
 
             /* 글자색 */
             color: white;
+            width: 300px;
+        }
+
+        /* 클래스 선택자 */
+        .square {
+            /* 폭 100px */
+            width: 100px;
+            /* 높이 100px */
+            height: 100px;
+            border: 1px solid pink;
         }
 
         #redBox {
             /* 배경색 */
             background-color: red;
         }
-    </style>
 
-    <div id="blueBox" class="square">
+        /* 클래스 선택자와 아이디 선택자 모두에서 레이아웃용 css 속성선언이 있다면?
+        아이디 선택자에서 적용하는 속성의 우선순위가 높다. 그 아이디 선택자가 먼저쓰이고 그 다음으로 클래스선택자가 같은 속성의 값을 변경한다고 해도 적용이 안됨!!!! 
+        우선순위부분에서 나중에 동일한 선언을 해서 값을 변경하면 나중에 선언한 값으로 적용된다.
+        */
+
+        /* css 복습 방법 */
+        /*
+        1. 마크업과 css 선언 자체를 구분할줄 아는가?
+        2. 선택자가 무엇이 있는지 공부한다(1차 리팩토링 시도)
+        3. 선택자의 우선순위를 공부한다(2차 리팩토링 시도)
+        🔥궁금해도 참고 순서지켜서 복습하기!!!!!
+        */
+    </style>
+</head>
+
+<body>
+    <!-- <div id="blueBox" class="square" style="width: 30px;">
         Blue Box
     </div>
     <br>
     <div id="redBox" class="square">
         Red Box
-    </div>
+    </div> -->
+    <div class="square">샘플</div>
+    <div class="square">샘플</div>
+    <div class="square">샘플</div>
+    <div class="square">샘플</div>
+    <div class="square">샘플</div>
+    <div class="square">샘플</div>
+    <div class="square">샘플</div>
+    <div class="square">샘플</div>
+    <div class="square">샘플</div>
+    <div class="square">샘플</div>
+    <div class="square">샘플</div>
+    <div class="square">샘플</div>
 </body>
 
 </html>

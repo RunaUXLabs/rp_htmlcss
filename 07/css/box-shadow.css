@@ -1,0 +1,59 @@
+@charset "UTF-8";
+div, p {
+  width: 150px;
+  height: 150px;
+  /* margin: 32px; */
+  margin: 200px;
+}
+div {
+  background-color: aquamarine;
+  /* box-shadow: x위치 y위치 그림자색상; 기본값*/
+  /* box-shadow: x위치 y위치 블러크기 그림자크기조정 그림자색상; 풀옵션*/
+
+  /* 각 위치 값과 그림자 크기에서는 음수사용 가능, 블러는 불가 */
+  /* x,y의 위치는 객체의 좌상단 모서리를 0,0 기준으로 받는다 */
+
+  /* box-shadow: 16px 16px darkblue; */
+  /* 기본 상자 그림자  */
+  /* box-shadow: 16px 16px rgba(0, 0, 0, 0.5); */
+  /* 상자 그림자 투명 검은색 */
+  /* box-shadow: 16px 16px 8px rgba(0, 0, 0, 0.5); */
+  /* 상자 그림자 투명 검은색 흐리게 */
+  /* box-shadow: 16px 16px 8px 32px rgba(0, 0, 0, 0.5); */
+  /* 상자 그림자 투명 검은색 32px만큼 확장 */
+  box-shadow: 16px 16px 8px 32px rgba(0, 0, 0, 0.5), 0px 0px 4px 32px red;
+  /* 투명한 검정 그림자와 빨강 그림자 */
+
+}
+p {
+  background: #f7f7f7;
+  box-sizing: border-box;
+  position: relative;
+  border: 10px solid #1b1b25;
+  box-shadow:
+    96px -40px 0 -40px #1b1b25,
+    -50px 0 0 #1b1b25,
+    55px 0 0 0 #feff03,
+    0 65px 0 0 #374cd9;
+}
+P::before {
+  content: '';
+  border: 10px solid #1b1b25;
+  width: 185px;
+  height: 55px;
+  display: block;
+  position: absolute;
+  top: 130px;
+  left: -10px;
+}
+P::after {
+  content: '';
+  border: 10px solid #1b1b25;
+  width: 46px;
+  height: 67px;
+  display: block;
+  position: absolute;
+  top: 85px;
+  right: -66px;
+  ;
+}

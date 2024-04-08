@@ -1,14 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>태그자체를 가르키는 태그선택자</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-</head>
-
-<body>
     <style>
         /* 태그 선택자 */
+        /* 초기화 시킬 때(기본값 제거할 때) 쓰자!
+        일반 태그선택자에 레이아웃용 선언 금지! */
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /* *로 선택자 잡으면 속도가 저하 될 수 있음, 각 태그를 불러서 초기화 해도 됨.
+        서비스의 규모가 너무 크지 않다면? * 쓰면된다.  */
+        h1,
+        h2,
+        ul,
+        p {
+            margin: 0;
+        }
+
+        ul {
+            padding: 0;
+        }
 
         /* <div> 태그 선택 */
         div {
@@ -20,6 +38,9 @@
             color: blue;
         }
     </style>
+</head>
+
+<body>
 
     <div>
         div 태그는 빨간색!
@@ -27,6 +48,11 @@
         <span>span 태그는 파란색</span>
         <br>
         가장 가까운 스타일이 적용된다
+    </div>
+
+    <div>
+        다른용도로 만든 div
+        <div>파란색이고 싶은 div 안녕?</div>
     </div>
 </body>
 
