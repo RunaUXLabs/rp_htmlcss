@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>n번째 요소를 세는 선택자 :nth-child(n)</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-</head>
-
-<body>
     <style>
         /* 정사각형 */
         .box {
@@ -14,24 +12,21 @@
             height: 150px;
             border: 2px solid blue;
             border-top: none;
+            /* 모든 박스의 윗부분 선을 날리고 */
         }
 
-        /* 1번째 자식 */
+        /* 1번째 자식만 선을 부여 */
         .box:nth-child(1) {
             border-top: 2px solid blue;
         }
     </style>
+</head>
 
+<body>
     <div>
-        <div class="box">
-            첫 번째 상자
-        </div>
-        <div class="box">
-            두 번째 상자
-        </div>
-        <div class="box">
-            세 번째 상자
-        </div>
+        <div class="box"> 첫 번째 상자 </div>
+        <div class="box"> 두 번째 상자 </div>
+        <div class="box"> 세 번째 상자 </div>
     </div>
 </body>
 

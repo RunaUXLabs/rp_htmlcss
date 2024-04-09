@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>포커싱이 되게 만드는 tabindex</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-</head>
-
-<body>
     <style>
         /* 전체 선택자 + focus 가상 클래스 */
         *:focus {
@@ -20,14 +18,15 @@
             border: 2px solid blue;
         }
     </style>
+</head>
 
+<body>
     <input>
-    <div class="box">
-        상호작용 불가능!
-    </div>
-    <div class="box" tabindex="0">
-        상호작용 가능!
-    </div>
+    <div class="box"> 상호작용 불가능! </div>
+    <!-- tabindex는 값이 -1, 0, 1이 있지만 태그의 작성순서에 따르게
+        포커싱을 적용시킬 예정이라면 0값만 기억하면 된다. 이미 포커싱 되는 태그는
+        -1을 통해 포커싱이 안되게 만들 수 있으며, 1은 가장 우선적으로 포커싱을 받게 해준다 -->
+    <div class="box" tabindex="0"> 상호작용 가능! </div>
 </body>
 
 </html>

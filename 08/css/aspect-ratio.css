@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/* 정사각형 */
+.box {
+  width: 150px;
+  height: 150px;
+  border: 2px solid blue;
+}
+
+/* :nth-child(n) n값은 형제(같은 부모)들 기준으로 숫자를 세야 한다 */
+.box:nth-child(2) {
+  background-color: red;
+}
+
+
+/* :nth-of-type(n)
+n값은 같은 타입을 기준으로 숫자를 세야 한다. 딴집이어도 상관없다. */
+.box:nth-of-type(2) {
+  /* 예시) .box:nth-of-type(2) 클래스명이 .box로 되어있는 요소만 세서 그 중 2번째 */
+  background-color: rebeccapurple;
+}
+div:nth-of-type(2) {
+  /* 예시) div:nth-of-type(2) 같은 div를 모두 찾아 그 중 2번째 */
+  background-color: green;
+}

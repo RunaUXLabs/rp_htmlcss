@@ -11,10 +11,30 @@
         /* focus 가상 클래스 */
         input:focus {
             box-shadow: 0px 0px 0px 4px red;
+            /* background: orange; */
+        }
+
+        /* 포커스는 outline이 일하는 중!
+           outline에 box-shadow를 적용하여 그것보다 4px 키운
+           빨간색을 적용하고 있다.*/
+
+        /* input {
+            outline: none;
+        } */
+
+        /* tabindex속성을 통해 포커스 잡히게 설정했을 때 띄울 모습 */
+        div:focus {
+            /* box-shadow: 0px 0px 0px 4px orange; */
+            outline: 3px dotted orange
         }
     </style>
 
     <input>
+    <div>안녕</div>
+    <span>바보야</span>
+    <a href="#">포커스 됩니까?</a>
+    <!-- div, span 폼컨트롤이 아니므로 포커싱이 되지 않는다. -->
+    <div tabindex="0">탭인덱스를 넣어 강제 포커싱</div>
 </body>
 
 </html>
