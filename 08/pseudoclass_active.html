@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>의사선택자 :active, 누르고 있는 상태 </title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-</head>
-
-<body>
     <style>
         button:active {
             background-color: aqua;
         }
     </style>
+</head>
 
-    <button>
-        아무 버튼
-    </button>
+<body>
+    <button> 아무 버튼 </button>
+    <!-- 버튼에는 기본 디자인이 모든 상태에 대에 지정되어있다.
+    여기에서 css를 통해 부분적으로 변경되면,
+    해당 상태일때 디자인이 변경되고 적용안되는 기본값은 유지된다. -->
 </body>
 
 </html>

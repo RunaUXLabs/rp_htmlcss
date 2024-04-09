@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>다중 클래스</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-</head>
-
-<body>
     <style>
         /* 클래스 선택자 */
-
         /* 빨강 글자색 */
         .red {
             color: red;
@@ -24,10 +21,19 @@
         .font-lg {
             font-size: 20px;
         }
-    </style>
 
+        /* 선택자의 디테일을 올려 우선순위로 속성값 변경하는 케이스 */
+        div>span.red {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
     <div>
-        코드는 <span class="red">이해하면서 따라해</span>야 합니다.
+        <!-- 다중 클래스는 작성 순서에 따라
+            마지막에 쓰이는 클래스의 속성이 최종 적용된다. -->
+        코드는 <span class="red font-lg">이해하면서 따라해</span>야 합니다.
         <br>
         책을 읽는 사람 모두 <span class="font-lg bg-yellow">멋진 웹 사이트</span>를 만들 수 있을 거예요.
     </div>

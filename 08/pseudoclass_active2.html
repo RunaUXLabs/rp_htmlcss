@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>모든 태그에 적용되는 누르고 있는 상태 :active</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-</head>
-
-<body>
     <style>
-        /* 클래스 선택자 + 가상 클래스 */
+        /* 클래스선택자:의사선택자active */
         .click:active {
             background-color: aqua;
         }
     </style>
-     
-    <div class="click">
-        다른 태그들도 될까요?
-    </div>
-     
-    <span class="click">
-        됩니다!
-    </span>    
+</head>
+
+<body>
+    <div class="click"> 다른 태그들도 될까요? </div>
+    <span class="click"> 됩니다! </span>
+
+    <!-- 스타일이있는 기본태그나 div,span등에
+        클래스명을 붙이고 :hover :active 구성해보기 -->
 </body>
 
 </html>
