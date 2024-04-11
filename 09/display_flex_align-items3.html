@@ -1,83 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>부모의 높이를 기준으로 세로정렬 지정 align-items 3</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/09/css/display_flex_align-items3.css">
 </head>
 
 <body>
-    <style>
-        /* 플렉스 박스 */
-        .flex {
-            display: flex;
-            border: solid 1px black;
-            padding: 16px;
-            background-color: aquamarine;
-
-            /* 높이 200px */
-            height: 200px;
-
-            /* 겉 여백 */
-            margin-bottom: 16px;
-        }
-
-        .flex-center {
-            /* 기본 축 중심 */
-            justify-content: center;
-        }
-
-        .align-items-start {
-            /* 교차 축 시작 */
-            align-items: flex-start;
-        }
-
-        .align-items-end {
-            /* 교차 축 끝 */
-            align-items: flex-end;
-        }
-
-        .align-items-center {
-            /* 교차 축 중심 */
-            align-items: center;
-        }
-
-        .flex>div {
-            /* 보라 배경색 */
-            background-color: blueviolet;
-            color: white;
-
-            /* 높이 설정 */
-            height: 100px;
-
-            /* 테두리 */
-            border: solid 1px black;
-        }
-    </style>
-
-    <div class="flex align-items-start flex-center">
-        <div>
-            교차축
-        </div>
-        <div>
-            시작
-        </div>
+    <div class="flex align-items-start justify-content-center">
+        <div> 교차축 </div>
+        <div> 시작 </div>
     </div>
-    <div class="flex align-items-center flex-center">
-        <div>
-            교차축
-        </div>
-        <div>
-            중심
-        </div>
+    <div class="flex align-items-center justify-content-center">
+        <div> 교차축 </div>
+        <div> 중심 </div>
     </div>
-    <div class="flex align-items-end flex-center">
-        <div>
-            교차축
-        </div>
-        <div>
-            끝
-        </div>
+    <div class="flex align-items-end justify-content-center">
+        <div> 교차축 </div>
+        <div> 끝 </div>
     </div>
 </body>
 

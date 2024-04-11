@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/* 플렉스 박스 */
+.flex {
+  display: flex;
+  /* display: flex;만 딱 하나 쓰면
+    아래의 3개 속성은 기본값을 가져간다.
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch; */
+  border: solid 1px black;
+  padding: 16px;
+  background-color: aquamarine;
+
+  /* 높이 200px */
+  height: 200px;
+  /* 부모의 높이가 지정되면 별다른 특징이 없는 자식들이 부모의 높이만큼 늘어나 있다! */
+
+  /* 겉 여백 */
+  margin-bottom: 16px;
+}
+
+.flex-space-between {
+  /* 아이템끼리 최대한 거리 두기 */
+  justify-content: space-between;
+}
+
+.flex > div {
+  /* 별다른 특징이 없는 자식 */
+  border: solid 1px black;
+  background-color: blueviolet;
+  color: white;
+}

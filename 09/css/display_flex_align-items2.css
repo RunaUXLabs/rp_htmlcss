@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/* 플렉스 박스 */
+.flex {
+  display: flex;
+  border: solid 1px black;
+  padding: 16px;
+  background-color: aquamarine;
+
+  /* 부모의 높이 200px */
+  height: 200px;
+
+  /* 겉 여백 */
+  margin-bottom: 16px;
+}
+
+.flex-space-between {
+  /* 아이템끼리 최대한 거리 두기 */
+  justify-content: space-between;
+}
+
+.flex > div {
+  border: solid 1px black;
+  background-color: blueviolet;
+  color: white;
+
+  /* 자식한테 높이 설정, 높이가 지정되지 않으면 align-items:stretch에
+  의해 자식이 세로로 늘어나는데, 고정값이 있다면 늘어나지 않고
+  지정된 높이로 상단에 정렬되는 모습을 보인다. */
+  height: 100px;
+}

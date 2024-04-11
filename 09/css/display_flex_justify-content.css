@@ -69,5 +69,12 @@
   border: solid 1px black;
 
   /* 바깥여백 */
-  margin: 0 20px;
+  /* margin: 0 20px; */
+}
+.flex > div:last-child {
+  /* 자식이 특징(여백, 사이즈)을 갖는다면
+  무조건 수용하는 flex부모,
+  특징이 없는 형제는 양보 */
+  width: 200px;
+  margin: 0 40px;
 }

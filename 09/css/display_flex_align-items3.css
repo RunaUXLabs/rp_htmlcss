@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/* 플렉스 박스 */
+.flex {
+  display: flex;
+  border: solid 1px black;
+  padding: 16px;
+  background-color: aquamarine;
+
+  /* 부모의 높이 200px */
+  height: 200px;
+
+  /* 겉 여백 */
+  margin-bottom: 16px;
+}
+
+.justify-content-center {
+  /* 기본 축 중심 */
+  justify-content: center;
+}
+
+.align-items-start {
+  /* 교차 축 시작 */
+  align-items: flex-start;
+  /* 자식이 고정사이즈가 되면 상단으로 붙는 기본형태가 되므로, 
+  align-items: flex-start;라 선언하지 않아도 상단 정렬된다.
+  
+  자식이 고정사이즈가 없으면 align-items: stretch가 기본값,
+  자식이 고정사이즈가 있으면 align-items: flex-start가 기본값
+  */
+}
+
+.align-items-end {
+  /* 교차 축 끝 */
+  align-items: flex-end;
+}
+
+.align-items-center {
+  /* 교차 축 중심 */
+  align-items: center;
+
+  /* align-items: baseline;이 있는데, 활자가 박스권인 문화에서는
+  의미가 없음, 영어 소문자의 baseline 밑으로 떨어지는 활자를 기준으로
+  center 정렬을 하게되는 경우를 표시할때 사용한다. */
+}
+
+
+.flex > div {
+  border: solid 1px black;
+  background-color: blueviolet;
+  color: white;
+
+  /* 자식의 높이 설정 */
+  height: 100px;
+}
