@@ -1,35 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>형제 결합자 ~ </title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-</head>
-
-<body>
     <style>
         /* 정사각형 */
         .box {
             width: 150px;
             height: 150px;
             border: 2px solid blue;
+            margin: 0 0 20px 0;
         }
 
-        /* box 클래스 이후에 오는 box 클래스 */
+        /* box 클래스 이후에 오는 모든 box 클래스 */
+        /* p~.box {
+            background: red;
+        } */
+
         .box~.box {
-            border-top: none;
+            background: red;
         }
-    </style>
 
-    <div class="box">
-        첫 번째 상자
-    </div>
-    <div class="box">
-        두 번째 상자
-    </div>
-    <div class="box">
-        세 번째 상자
-    </div>
+        /* css 선택자에서 찾아낼 수 있는 범위
+            1. 자식
+            2. 자손
+            3. 부모
+            4. 조상
+            안되는거!!!!  형, 누나, 언니, 오빠 안됨
+
+            안되는거 선택하고 싶으면 어떡해요?
+             - 이름붙여
+             - 자바스크립트 DOM 접근
+         */
+    </style>
+</head>
+
+<body>
+    <span class="box">샘플</span>
+    <p class="box"> 이전박스 </p>
+    <p class="box"> 첫 번째 상자 </p>
+    <div class="box"> 두 번째 상자 </div>
+    <div class="box"> 세 번째 상자 </div>
 </body>
 
 </html>

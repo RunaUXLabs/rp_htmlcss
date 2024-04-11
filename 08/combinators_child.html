@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>직계 자식 결합자 > </title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-</head>
-
-<body>
     <style>
         /* form-wr 클래스의 자식 중 label */
         .form-wr>label {
@@ -19,11 +17,20 @@
             font-size: 20px;
         }
 
-        /* form-wr 클래스의 자식 중 span */
+        /* form-wr 클래스의 직계 자식 중 span,
+        해당하는 부분이 없어서 화면에 적용되지 않음 */
         .form-wr>span {
             color: red;
         }
+
+        /* form-wr 클래스 하위의 모든 자식 중 span*/
+        .form-wr span {
+            background-color: red;
+        }
     </style>
+</head>
+
+<body>
 
     <div class="form-wr">
         <label>
@@ -35,6 +42,11 @@
             <span>
                 친자식이 아니라 선택되지 못하는 구나
             </span>
+            <div>
+                <div>
+                    <span>안녕?</span>
+                </div>
+            </div>
         </div>
     </div>
 </body>

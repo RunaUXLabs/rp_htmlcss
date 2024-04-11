@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>형제 인접 결합자 +</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-</head>
-
-<body>
     <style>
         /* 정사각형 */
         .box {
@@ -15,18 +13,23 @@
             border: 2px solid blue;
         }
 
-        /* a 클래스 바로 뒤에 오는 b 클래스 */
+        /* a 클래스 바로 뒤에 오는 b 클래스 1개만!
+            이전에 오는 b클래스는 해당 되지 않음 */
         .a+.b {
             background-color: red;
         }
     </style>
+</head>
 
-    <div class="a box">
-        a 클래스
-    </div>
-    <div class="b box">
-        b 클래스
-    </div>
+<body>
+    <div class="b box"> b 클래스 </div>
+    <div class="a box"> a 클래스 </div>
+    <div class="b box"> b 클래스 </div>
+    <div class="b box"> b 클래스 </div>
+
+    예시)
+    <input type="text">
+    <label>라벨</label>
 </body>
 
 </html>
