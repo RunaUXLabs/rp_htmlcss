@@ -2,8 +2,17 @@
 
 /* 플렉스 박스 */
 .flex {
-  /* display: flex; */
-  display: inline-flex;
+  display: flex;
+  /* display: flex;만 딱 하나 쓰면
+  아래의 3개 속성은 기본값을 가져간다.
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  */
+
+  height: 100px;
+
+  /* display: inline-flex; */
   /* width: 300px; */
   margin: 20px 0px;
   border: solid 1px black;

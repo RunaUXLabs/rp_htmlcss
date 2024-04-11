@@ -1,72 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>flex 기본축에 따라 row 정렬모습 지정 justify-content</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/09/css/display_flex_justify-content.css">
 </head>
 
 <body>
-    <style>
-        /* 플렉스 박스 */
-        .flex {
-            display: flex;
-            border: solid 1px black;
-            padding: 16px;
-            background-color: aquamarine;
-
-            /* 겉 여백 */
-            margin-bottom: 16px;
-        }
-
-        .flex-start {
-            /* 아이템을 시작 쪽으로 */
-            justify-content: flex-start;
-        }
-
-        .flex-end {
-            /* 아이템을 끝 쪽으로 */
-            justify-content: flex-end;
-        }
-
-        .flex-center {
-            /* 아이템을 중심으로 */
-            justify-content: center;
-        }
-
-        .flex>div {
-            /* 보라 배경색 */
-            background-color: blueviolet;
-            color: white;
-
-            /* 테두리 */
-            border: solid 1px black;
-        }
-    </style>
-
     <div class="flex flex-start">
-        <div>
-            플렉스
-        </div>
-        <div>
-            스타트
-        </div>
+        <div> 플렉스 </div>
+        <div> 스타트 </div>
     </div>
     <div class="flex flex-end">
-        <div>
-            플렉스
-        </div>
-        <div>
-            엔드
-        </div>
+        <div> 플렉스 </div>
+        <div> 엔드 </div>
     </div>
     <div class="flex flex-center">
-        <div>
-            플렉스
-        </div>
-        <div>
-            센터
-        </div>
+        <div> 플렉스 </div>
+        <div> 센터 </div>
     </div>
 </body>
 

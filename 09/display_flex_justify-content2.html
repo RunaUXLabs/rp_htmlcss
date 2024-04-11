@@ -1,71 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>flex 기본축에 따라 row 정렬모습 지정 justify-content 2</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/09/css/display_flex_justify-content.css">
 </head>
 
 <body>
-    <style>
-        /* 플렉스 박스 */
-        .flex {
-            display: flex;
-            border: solid 1px black;
-            padding: 16px;
-            background-color: aquamarine;
-
-            /* 겉 여백 */
-            margin-bottom: 16px;
-        }
-
-        .flex-space-between {
-            /* 아이템끼리 최대한 거리 두기 */
-            justify-content: space-between;
-        }
-
-        .flex-space-around {
-            /* 아이템 양옆에 같은 여백 */
-            justify-content: space-around;
-        }
-
-        .flex-space-evenly {
-            /* 아이템 사이 여백 크기 일치 */
-            justify-content: space-evenly;
-        }
-
-        .flex>div {
-            /* 보라 배경색 */
-            background-color: blueviolet;
-            color: white;
-
-            /* 테두리 */
-            border: solid 1px black;
-        }
-    </style>
-
     <div class="flex flex-space-between">
-        <div>
-            최대한
-        </div>
-        <div>
-            떨어진
-        </div>
-        <div>
-            요소
-        </div>
+        <div> 최대한 </div>
+        <div> 떨어진 </div>
+        <div> 요소 </div>
+        <div> 요소 </div>
+        <div> 요소 </div>
+        <div> 요소 </div>
     </div>
+
     <div class="flex flex-space-around">
-        <div>
-            요소 양옆
-        </div>
-        <div>
-            여백이
-        </div>
-        <div>
-            동일
-        </div>
+        <div> 요소 양옆 </div>
+        <div> 여백이 </div>
+        <div> 동일 </div>
+        <div> 동일 </div>
+        <div> 동일 </div>
+        <div> 동일 </div>
     </div>
+
     <div class="flex flex-space-evenly">
         <div>
             사이
