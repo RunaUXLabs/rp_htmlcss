@@ -2,66 +2,30 @@
 <html lang="ko">
 
 <head>
-    <title>flex 나열 방향 지정</title>
+    <title>flex 아이템 나열 방향 지정 1 basic</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="/09/css/display_flex-direction.css">
 </head>
 
 <body>
-    <style>
-        /* 플렉스 박스 */
-        .flex {
-            display: flex;
-            border: solid 1px black;
-            padding: 16px;
-            background-color: aquamarine;
+    <!-- 자식들의 나열 기본값은 flex-direction: row;이다.
+    어느 방향이든 자식은 부모를 꽉 채우려고 노력한다.
+    자식이 특징을 갖아 사이즈가 특정되지 않는 이상,
+    살을 빼거나 찌워서 부모를 덮으려고 하는것이 flexible의 특징.
 
-            /* 높이 200px */
-            height: 200px;
-
-            /* 겉 여백 */
-            margin-bottom: 16px;
-        }
-
-        .flex-center {
-            /* 기본 축 중심 */
-            justify-content: center;
-        }
-
-        .align-items-start {
-            /* 교차 축 시작 */
-            align-items: flex-start;
-        }
-
-        .column {
-            /* 기본 축 세로로 변경 */
-            flex-direction: column;
-        }
-
-        .flex>div {
-            /* 보라 배경색 */
-            background-color: blueviolet;
-            color: white;
-
-            /* 높이 설정 */
-            height: 100px;
-
-            /* 테두리 */
-            border: solid 1px black;
-        }
-    </style>
-
-    <div class="flex align-items-start flex-center column">
-        <div>
-            첫 번째
-        </div>
-        <div>
-            두 번째
-        </div>
-        <div>
-            세 번째
-        </div>
+    하지만 flex-wrap: nowrap;이 기본값이므로, 자식이 넘치는 경우
+    최대한 살을 빼도 안될경우엔 부모를 뚫고 나간다.
+     -->
+    <div class="flex align-items-start justify-content-center">
+        <div> 첫 번째 </div>
+        <div> 두 번째 </div>
+        <div> 세 번째 </div>
+    </div>
+    <div class="flex align-items-start justify-content-center column">
+        <div> 첫 번째 </div>
+        <div> 두 번째 </div>
+        <div> 세 번째 </div>
     </div>
 </body>
 

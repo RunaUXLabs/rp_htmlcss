@@ -1,54 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>플렉스 아이템들끼리 사이를 벌려주는 gap</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/09/css/display_flex_gap.css">
 </head>
 
 <body>
-    <style>
-        /* 플렉스 박스 */
-        .flex {
-            display: flex;
-            border: solid 1px black;
-            padding: 16px;
-            background-color: aquamarine;
-
-            /* 높이 400px */
-            height: 400px;
-
-            /* 겉 여백 */
-            margin-bottom: 16px;
-        }
-
-        .gap {
-            gap: 8px;
-        }
-
-        .flex>div {
-            /* 보라 배경색 */
-            background-color: blueviolet;
-            color: white;
-
-            /* 높이 설정 */
-            height: 100px;
-
-            /* 테두리 */
-            border: solid 1px black;
-        }
-    </style>
-
+    <!-- gap은 아이템의 사이를 고정값으로 벌리는데 사용. -->
     <div class="flex gap">
-        <div>
-            첫 번째
-        </div>
-        <div>
-            두 번째
-        </div>
-        <div>
-            세 번째
-        </div>
+        <div> 첫 번째 </div>
+        <div> 두 번째 </div>
+        <div> 세 번째 </div>
     </div>
 </body>
 

@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/* 플렉스 박스 */
+.flex {
+  display: flex;
+  border: solid 1px black;
+  padding: 16px;
+  background-color: aquamarine;
+  height: 200px;
+  margin-bottom: 16px;
+}
+
+.gap {
+  gap: 8px;
+}
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+
+.flex > div {
+  background-color: blueviolet;
+  color: white;
+  height: 100px;
+  border: solid 1px black;
+}

@@ -1,65 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>flex 아이템 나열 방향 지정 2 + space-between</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/09/css/display_flex-direction.css">
 </head>
 
 <body>
-    <style>
-        /* 플렉스 박스 */
-        .flex {
-            display: flex;
-            border: solid 1px black;
-            padding: 16px;
-            background-color: aquamarine;
-
-            /* 높이 400px */
-            height: 400px;
-
-            /* 겉 여백 */
-            margin-bottom: 16px;
-        }
-
-        .flex-space-between {
-            /* 기본 축 중심 */
-            justify-content: space-between;
-        }
-
-        .align-items-start {
-            /* 교차 축 시작 */
-            align-items: flex-start;
-        }
-
-        .column {
-            /* 기본 축 세로로 변경 */
-            flex-direction: column;
-        }
-
-        .flex>div {
-            /* 보라 배경색 */
-            background-color: blueviolet;
-            color: white;
-
-            /* 높이 설정 */
-            height: 100px;
-
-            /* 테두리 */
-            border: solid 1px black;
-        }
-    </style>
-
-    <div class="flex align-items-start flex-space-between column">
-        <div>
-            첫 번째
-        </div>
-        <div>
-            두 번째
-        </div>
-        <div>
-            세 번째
-        </div>
+    <!-- 부모의 width, height가 자식의 사이즈 합보다 큰 경우,
+     justify-content: space-between;을 선언하면 양끝으로 벌어지며
+      등간격배치가 된다. -->
+    <div class="flex align-items-start justify-content-space-between column">
+        <div> 첫 번째 </div>
+        <div> 두 번째 </div>
+        <div> 세 번째 </div>
+    </div>
+    <div class="flex align-items-start justify-content-space-between">
+        <div> 첫 번째 </div>
+        <div> 두 번째 </div>
+        <div> 세 번째 </div>
     </div>
 </body>
 

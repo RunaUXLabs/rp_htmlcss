@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>flex속성의 모든것</title>
+    <link rel="stylesheet" type="text/css" href="/09/css/flexboxStyle.css">
+</head>
+
+<body>
+    <!-- float, clearfix등을 이용해서 주변을 흐르는 성질을 가지고 레이아웃에 활용하였음.
+    css3 flex-box가 나오면서 레이아웃 전용 css를 사용하게 되었다.
+
+    낮은버전의 ie에서는 구동이 안된다.
+    ie9 css3 일부만 지원하므로, css2로 대체 작업을 하여 크로스브라우징을 한다.
+
+
+    flaot 자식보고 left/right/both 으로 가라고 지시
+    float이 적용된 부모에는 무조건 clearfix -->
+
+    <!-- flex-box
+    부모에게 선언하는것이 기본
+    부모가 움직이는것은 아니고, 자식들의 움직임을 부모에게 선언하는 것이다. -->
+
+    <h1>flex 속성</h1>
+    <h2>기본값 display:flex</h2>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <h2>flex-diretion</h2>
+    <div class="container flexdir">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+    </div>
+
+    <h2>flex-wrap</h2>
+    <div class="container flexWrap">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>15</div>
+        <div>16</div>
+        <div>17</div>
+    </div>
+
+    <h2>flex-flow</h2>
+    <div class="container flexFlow">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>15</div>
+        <div>16</div>
+        <div>17</div>
+    </div>
+
+    <h2>justify-content</h2>
+    <div class="container jc">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <h2>align-items</h2>
+    <div class="container ai">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <h2>align-content</h2>
+    <div class="container ac">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>15</div>
+        <div>16</div>
+        <div>17</div>
+    </div>
+
+    <h2>direction의 피봇의 상태일때 jc와 ai의 관계</h2>
+    <div class="container pivot">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <h2>자식의 개성을 살려주는 flex</h2>
+    <div class="container edge">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <h2>사이를 벌려 등간격을 조절하는 gap</h2>
+    <div class="container gap">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+    </div>
+
+
+    <h1>flex items</h1>
+    <h2>order</h2>
+    <div class="container">
+        <div class="order2">1</div>
+        <div class="order5">2</div>
+        <div class="order4">3</div>
+        <div class="order1">4</div>
+        <div class="order3">5</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+    </div>
+
+    <h2>flex-grow</h2>
+    <div class="container grow">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <!-- <div class="grow3">2</div> -->
+        <!-- <div class="grow3">3</div> -->
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <h2>flex-shirink</h2>
+    <div class="container shirink">
+        <div>1</div>
+        <div>2</div>
+        <!-- <div>3</div> -->
+        <div class="shirink3">3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+</body>
+
+</html>

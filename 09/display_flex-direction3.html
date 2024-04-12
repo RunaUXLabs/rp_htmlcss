@@ -1,81 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>flex 아이템 나열 방향 지정 3 + reverse</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/09/css/display_flex-direction.css">
 </head>
 
 <body>
-    <style>
-        /* 플렉스 박스 */
-        .flex {
-            display: flex;
-            border: solid 1px black;
-            padding: 16px;
-            background-color: aquamarine;
-
-            /* 높이 400px */
-            height: 400px;
-
-            /* 겉 여백 */
-            margin-bottom: 16px;
-        }
-
-        .flex-space-between {
-            /* 기본 축 중심 */
-            justify-content: space-between;
-        }
-
-        .align-items-start {
-            /* 교차 축 시작 */
-            align-items: flex-start;
-        }
-
-        .column-reverse {
-            /* 기본 축 역방향 세로로 변경 */
-            flex-direction: column-reverse;
-        }
-
-        .row-reverse {
-            /* 기본 축 역방향 가로로 변경 */
-            flex-direction: row-reverse;
-        }
-
-        .flex>div {
-            /* 보라 배경색 */
-            background-color: blueviolet;
-            color: white;
-
-            /* 높이 설정 */
-            height: 100px;
-
-            /* 테두리 */
-            border: solid 1px black;
-        }
-    </style>
-
+    <!-- reverse에서 알고 넘어가야 할 포인트🔥 
+        뒤집혀서 나열되는 것 처럼 보이지만, 기준이 바뀌는 것!
+        column은 top, row는 left에서 누적 정렬시작
+        row-reverse는 right에서 누적 정렬
+        column-reverse bottom에서 누적정렬 -->
     <div class="flex align-items-start flex-space-between column-reverse">
-        <div>
-            첫 번째
-        </div>
-        <div>
-            두 번째
-        </div>
-        <div>
-            세 번째
-        </div>
+        <div> 첫 번째 </div>
+        <div> 두 번째 </div>
+        <div> 세 번째 </div>
     </div>
     <div class="flex align-items-start flex-space-between row-reverse">
-        <div>
-            첫 번째
-        </div>
-        <div>
-            두 번째
-        </div>
-        <div>
-            세 번째
-        </div>
+        <div> 첫 번째 </div>
+        <div> 두 번째 </div>
+        <div> 세 번째 </div>
     </div>
 </body>
 

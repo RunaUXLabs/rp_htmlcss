@@ -1,57 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>플렉스 아이템들끼리 사이를 벌려주는 gap 2</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/09/css/display_flex_gap.css">
 </head>
 
 <body>
-    <style>
-        /* 플렉스 박스 */
-        .flex {
-            display: flex;
-            border: solid 1px black;
-            padding: 16px;
-            background-color: aquamarine;
-
-            /* 높이 200px */
-            height: 200px;
-
-            /* 겉 여백 */
-            margin-bottom: 16px;
-
-            /* 플렉스 아이템 최대한 거리두기 */
-            justify-content: space-between;
-        }
-
-        .gap {
-            gap: 8px;
-        }
-
-        .flex>div {
-            /* 보라 배경색 */
-            background-color: blueviolet;
-            color: white;
-
-            /* 높이 설정 */
-            height: 100px;
-
-            /* 테두리 */
-            border: solid 1px black;
-        }
-    </style>
-
     <div class="flex gap">
-        <div>
-            첫 번째
-        </div>
-        <div>
-            두 번째
-        </div>
-        <div>
-            세 번째
-        </div>
+        <div> 첫 번째 </div>
+        <div> 두 번째 </div>
+        <div> 세 번째 </div>
+    </div>
+    <!-- gap은 아이템의 사이를 고정값으로 벌리는데 사용.
+    부모가 큰 상태에서 자식들이 자동으로 사이간격을 나눠먹으려면
+    justify-content: space-between;을 선언하면 된다.
+    gap이 있는 상태에서 justify-content: space-between;를 추가로 적용하면
+    gap공간을 확보하고 나서 나머지를 등간격으로 나눠 먹는다. -->
+    <div class="flex gap justify-content-space-between">
+        <div> 첫 번째 </div>
+        <div> 두 번째 </div>
+        <div> 세 번째 </div>
     </div>
 </body>
 
