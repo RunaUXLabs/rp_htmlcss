@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+/* 전체적인 레이아웃 */
+.layout {
+  display: flex;
+
+  /* 간격 */
+  gap: 16px;
+
+  /* 컨테이너 사이즈 */
+  max-width: 1024px;
+
+  /* 콘텐츠 중심으로 정렬 */
+  margin: auto;
+}
+
+/* 페이지 배경색 */
+body {
+  background-color: rgb(248, 248, 248);
+}
+
+/* 본문 */
+section {
+  width: 100%;
+  height: 1400px;
+
+  padding: 8px;
+  background-color: white;
+}
+
+/* 사이드 */
+aside {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 정사각형 */
+.box {
+  background-color: blue;
+  width: 300px;
+  height: 300px;
+  color: white;
+}
+
+/* 정사각형 sticky 광고 */
+/* 🔥position의 막내 sticky의 특징! 장점을 싸그리 합침
+처음에는 relative처럼 행동:자기위치에서 기다리고 있음
+스크롤링이 되고 위치값이 지정되는 곳에 다다르면, 그때부터 fixed처럼 행동함(viewport에 위치고정)
+relative의 속성을 기본으로 하고 있기 때문에, sticky 자식을 품은 부모의 스크롤이 넘어가면 같이 넘어감
+(포털 네이버에서 반쪽 레이아웃의 스크롤링 흐름이 서로 다른이유를 설명할 수 있음.)
+fixed처럼 스크롤이 안생기는것이 아니라, absolute처럼 화면 밖에서는 스크롤이 생김.
+
+sticky는 모든이들이 많이 봐온 스크롤링할 때 신기한 애를 담당하고 있음,
+클론작업시 레퍼런스 레이아웃 분석이 꼼꼼해야 구현가능.
+*/
+
+.ads {
+  position: sticky;
+  top: 32px;
+
+  background-color: aquamarine;
+  width: 300px;
+  height: 300px;
+}

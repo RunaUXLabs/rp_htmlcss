@@ -91,8 +91,8 @@
     width: 50%;
     height: 1000px;
     flex-direction: column;
-    /* justify-content: space-between; */
-    justify-content: center;
+    justify-content: space-between;
+    /* justify-content: center; */
     align-items: center;
     /* flex-wrap: wrap; */
     /* align-content: center; */

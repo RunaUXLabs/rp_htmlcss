@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/* 고정 위치 */
+.fixed {
+  /* position: fixed; */
+  position: absolute;
+  /* 기준따위 필요없다, 나는 오로지!!! 브라우저의 viewport만 기준으로 받는다.
+  해당 요소의 상위 부모가 position이 선언되어있어도 싹 다 무시! */
+
+  top: 870px;
+  left: 1800px;
+  /* 기준방향을 잘 잡고 거기서 최소수치로 위치잡아야 하는 이유,
+  스크롤 이슈 때문이죠
+  fixed는 물리적인 위치이슈로 viewport를 벗어나도 스크롤이 생기지 않는다.
+  absolute는 생김!!!
+  
+  나비효과)
+  position을 목적에 맞게끔 쓰지 않는다면, 일이 늘어나고 => 화면 유지보수가 별로 => 사용성으로 반영이 되고 => 안좋은 사용성은 사용자(고객)가 떠나게 만듦 => 깡통을 참*/
+}
+
+/* 정사각형 */
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+/* 긴 직사각형 */
+.long-box {
+  width: 300px;
+  height: 800px;
+}
+
+/* 배경색 A */
+.a {
+  /* 위치를 직관적으로 알기 위해서 그라디언트 적용 */
+  background-image: linear-gradient(red, blue);
+}
+/* 배경색 B */
+.b {
+  background-color: bisque;
+}
+
+
+/* 고정 위치 */
+.popup {
+  position: fixed;
+  top: 40%;
+  left: 40%;
+
+  width: 150px;
+  height: 200px;
+  background-color: white;
+  border: solid 1px lightgray;
+
+  /* overflow: auto; 고정값을 넘치는 콘텐츠가 생기면 자동으로 스크롤바 생성 */
+  overflow-y: auto;
+}

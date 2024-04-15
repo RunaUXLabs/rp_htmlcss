@@ -1,50 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>position: absolute 기본 01</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/09/css/position-absolute.css">
 </head>
 
 <body>
-    <style>
-        /* 절대 위치 */
-        .abs {
-            position: absolute;
+    <!-- 기준이 태초인 샘플 -->
+    <div class="long-box a"> 직사각형 A </div>
+    <div class="box b abs01"> 정사각형 B </div>
 
-            top: 0;
-            left: 0;
-        }
-
-        /* 정사각형 */
-        .box {
-            width: 100px;
-            height: 100px;
-        }
-
-        /* 긴 직사각형 */
-        .long-box {
-            width: 100px;
-            height: 800px;
-        }
-
-        /* 배경색 A */
-        .a {
-            background-color: aquamarine;
-        }
-
-        /* 배경색 B */
-        .b {
-            background-color: bisque;
-        }
-    </style>
-
-    <div class="long-box a">
-        직사각형 A
+    <!-- 기준을 부여하는 형식 샘플 -->
+    <div class="rel">
+        <div>
+            <span class="abs02">바</span>
+            <span>보</span>
+        </div>
     </div>
-    <div class="box b abs">
-        정사각형 B
-    </div>
+    <!-- 초급기준 포지션 설명
+        1. 나열이 아닌 겹치는거 하고싶거나, 지정위치에 딱 놓고싶다.
+        2. 대상한테 position: absolute와 top과 left값을 줘서 위치를 지정한다.
+        3. 직계부모에 position: relative 선언한다. 끝-->
+
+    <!-- 중급기준 포지션 설명
+        0. 초급개념 이해 완
+        1. position부모 밑에 position이 적용되는 원리, 없으면 태초(body)까지 올라감
+        2. 기준을 부여받은 상대값과 태초기준 절대값의 차이
+        3. position에 내재되어있는 top과 left의 존재의 인식과 선점과 덮어쓰기
+        4. 위치값이 설정되어 있지않을 때 배치되는 경우의 수
+        5. figma의 설계화면 dev모드에서 position이 떳을 때 구분하기(의도와 실수)-->
 </body>
 
 </html>

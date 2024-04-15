@@ -1,46 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>position: relative 기본</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/09/css/position-relative.css">
 </head>
 
 <body>
-    <style>
-        /* 상대 위치 */
-        .rel {
-            position: relative;
-
-            /* 위 기준으로 -40px 당겨짐 */
-            top: -40px;
-            /* 왼쪽 기준으로 40px 밀쳐짐 */
-            left: 40px;
-        }
-
-        /* 정사각형 */
-        .box {
-            width: 100px;
-            height: 100px;
-        }
-
-        /* 배경색 A */
-        .a {
-            background-color: aquamarine;
-        }
-
-        /* 배경색 B */
-        .b {
-            background-color: bisque;
-        }
-    </style>
-
-    <div class="box a">
-        정사각형 A
-    </div>
-    <div class="box b rel">
-        정사각형 B
-    </div>
+    <div class="box a rel"> 정사각형 A </div>
+    <!-- relative에 위치값을 받으면? 디폴트상태에서 내 위치, 여기에서 상대적으로 움직여라! -->
+    <div class="box b"> 정사각형 B </div>
 </body>
 
 </html>

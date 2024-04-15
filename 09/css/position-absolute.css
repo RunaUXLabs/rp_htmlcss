@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/* 절대 위치 */
+.abs01 {
+  position: absolute;
+  /* 기준(부모 이상)으로부터 0,0을 받아, 그곳을 거점으로하고 상대적으로 이동.
+  absolute선언 후 위치값이 지정되면 기준점으로 부터 이동한다.
+  위치값이 없다면? relative와 같은효과. 물리적으로 지가 있어야 할 자리에 있음
+  
+  부모가 위치의 기준을 제시하지 못하면? 태초(body)까지 올라가면서
+  기준을 부여하는 요소한테 붙는다*/
+
+  top: 200px;
+  left: 0;
+}
+
+
+/* 정사각형 */
+.box {
+  /* width: 100px;
+  height: 100px; */
+}
+/* 긴 직사각형 */
+.long-box {
+  width: 100px;
+  height: 800px;
+}
+/* 큰 정사각형 */
+.big-box {
+  position: relative;
+  width: 30%;
+  height: 100px;
+}
+
+/* 배경색 A */
+.a {
+  background-color: aquamarine;
+}
+
+/* 배경색 B */
+.b {
+  background-color: bisque;
+}
+
+/* 기준을 부여하는 형식 샘플 */
+.rel {
+  width: 50%;
+  height: 300px;
+  border: 4px solid red;
+  /* position: fixed; */
+  position: relative;
+  /* position이 선언된 자식에게 기준을 부여하려면 부모가 position이 선언되어 있어야 한다. */
+}
+
+.abs02 {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.abs03 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  bottom: 20px;
+  right: 20px;
+  /* absolute만의 유일한 특징: 4방향을 모두 설정하면 네 포인트에 말뚝박아놓기 가능, 가로세로값이 없어야 하고 부모가 변경될때 따라간다. */
+  z-index: 100;
+}
+
+.main {
+  height: 600px;
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.main .popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* width: 200px;
+  height: 300px; */
+  /* margin: -150px 0 0 -100px; */
+  /* 가로세로가 고정값일 때 해당 지정값의 절반을
+  margin 음수값으로 조절할 수 있다. */
+
+  /* margin: -50% 0 0 -50%; */
+  /* 자식이 사라짐, margin에 %를 쓰려면 전제조건(가로도 비율이고 마진값도 비율일 땐 가능, 가로가 고정이고 마진이 비율일땐 적용 안됨)이 까다로움 */
+
+  width: 36%;
+  height: 200px;
+  /* margin: -100px 0 0 -18%; */
+
+  width: 20%;
+  height: 50%;
+  /* css3의 transform속성의 하위 함수translate(x, y)이용하면, 걱정 끝! */
+  transform: translate(-50%, -50%);
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}

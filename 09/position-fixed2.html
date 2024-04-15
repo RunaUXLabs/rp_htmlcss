@@ -1,47 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>position: fixed 기본 02</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/09/css/position-fixed.css">
 </head>
 
 <body>
-    <style>
-        /* 고정 위치 */
-        .popup {
-            position: fixed;
-
-            top: 40%;
-            left: 40%;
-
-            width: 150px;
-            height: 200px;
-            background-color: white;
-            border: solid 1px lightgray;
-            overflow-y: auto;
-        }
-
-        /* 긴 직사각형 */
-        .long-box {
-            width: 300px;
-            height: 800px;
-        }
-
-        /* 배경색 A */
-        .a {
-            /* 위치를 직관적으로 알기 위해서 그라디언트 적용 */
-            background-image: linear-gradient(red, blue);
-        }
-    </style>
-
-    <div class="long-box a">
-        큰 사각형 A
-    </div>
+    <div class="long-box a"> 큰 사각형 A </div>
     <div class="popup">
-        <h3>
-            작은 팝업
-        </h3>
+        <h3> 작은 팝업 </h3>
         팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용
     </div>
 </body>

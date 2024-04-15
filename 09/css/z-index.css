@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/* 고정 위치 */
+.fixed-a {
+  position: fixed;
+
+  /* 왼쪽 상단에 붙어 있다 */
+  left: 0;
+  top: 0;
+
+  /* 정사각형 */
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  color: white;
+
+  /* 순서 9 */
+  z-index: 10;
+}
+
+.fixed-b {
+  position: fixed;
+
+  /* 왼쪽 상단으로부터 떨어져 있다 */
+  top: 50px;
+  left: 50px;
+
+  /* 정사각형 */
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: white;
+
+  /* 순서 1 */
+  z-index: 1;
+}
+
+/* z-index는 position선언이 선행되어야 한다.
+  z-index만 딸랑 쓴다고 해결되는것은 전혀 없음!
+
+  숫자가 크면 위로 올라온다고? ㅇㅇ
+  같은집 식구끼리만 축의 순서를 바꿀 수 있음
+
+  내 부모(조상)가 축이 낮아....
+  자식이 개천용(z-index값이 아무리 커도)이어도
+  적용안됨, 집안 자체가 깔림.
+
+  멀리 내다보는 설계가 필요하다.
+  설계가 보이면 나중에 고생을 안한다.
+*/

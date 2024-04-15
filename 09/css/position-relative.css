@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/* 상대 위치 */
+.rel {
+  position: relative;
+  /* 내 현재위치 기준으로 x, y이동해라! */
+
+  /* 위 기준으로 -40px 당겨짐 */
+  top: -40px;
+  /* 왼쪽 기준으로 40px 밀쳐짐 */
+  left: 40px;
+  bottom: 100px;
+  right: -100px;
+  /* 방향을 지정하는 2개만(상/하, 좌/우 중 한개씩만) 선언했을 때 현재 위치에서 x,y로 이동한다.
+  하지만 방향값을 2개이상 썼을 경우에는 선점한 위치값이 적용된다.
+  css에서 같은 속성을 중첩선언하여 덮어쓰기하는 개념과는 다르다.
+  relative에는 top과 left가 기본값으로 설정되어있다.
+  
+  top에서 기대할 수 있는 위치값을 bottom으로 대체해서 사용가능,
+  left와 right의 관계도 마찬가지임. */
+}
+
+/* 정사각형 */
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+/* 배경색 A */
+.a {
+  background-color: aquamarine;
+}
+
+/* 배경색 B */
+.b {
+  background-color: bisque;
+}

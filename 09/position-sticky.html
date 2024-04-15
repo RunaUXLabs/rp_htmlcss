@@ -1,78 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>position: sticky</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/09/css/position-sticky.css">
 </head>
 
 <body>
-    <style>
-        /* 전체적인 레이아웃 */
-        .layout {
-            display: flex;
-
-            /* 간격 */
-            gap: 16px;
-
-            /* 컨테이너 사이즈 */
-            max-width: 1024px;
-
-            /* 콘텐츠 중심으로 정렬 */
-            margin: auto;
-        }
-
-        /* 페이지 배경색 */
-        body {
-            background-color: rgb(248, 248, 248);
-        }
-
-        /* 본문 */
-        section {
-            width: 100%;
-            height: 1400px;
-
-            padding: 8px;
-            background-color: white;
-        }
-
-        /* 사이드 */
-        aside {
-            width: 300px;
-            display: flex;
-            flex-direction: column;
-        }
-
-        /* 정사각형 */
-        .box {
-            background-color: blue;
-            width: 300px;
-            height: 300px;
-            color: white;
-        }
-
-        /* 정사각형 sticky 광고 */
-        .ads {
-            position: sticky;
-            top: 32px;
-
-            background-color: aquamarine;
-            width: 300px;
-            height: 300px;
-        }
-    </style>
-
+    <h1>이거저거 다섞었으나 자유로운 sticky</h1>
     <div class="layout">
         <section>
-            본문 콘텐츠
+            <h2>본문 콘텐츠</h2>
         </section>
         <aside>
-            <div class="box">
-                사이드바 박스
-            </div>
-            <div class="ads">
-                광고
-            </div>
+            <div class="box"> 사이드바 박스 </div>
+            <div class="ads"> 광고 </div>
         </aside>
     </div>
 </body>

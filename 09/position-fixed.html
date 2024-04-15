@@ -1,51 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>position: fixed 기본 01</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/09/css/position-fixed.css">
 </head>
 
 <body>
-    <style>
-        /* 고정 위치 */
-        .fixed {
-            position: fixed;
-     
-            top: 0;
-            left: 0;
-        }
-     
-        /* 정사각형 */
-        .box {
-            width: 100px;
-            height: 100px;
-        }
-     
-        /* 긴 직사각형 */
-        .long-box {
-            width: 300px;
-            height: 800px;
-        }
-     
-        /* 배경색 A */
-        .a {
-            /* 위치를 직관적으로 알기 위해서 그라디언트 적용 */
-            background-image: linear-gradient(red, blue);
-        }
-     
-        /* 배경색 B */
-        .b {
-            background-color: bisque;
-        }
-    </style>
-     
-    <div class="long-box a">
-        큰 사각형 A
-    </div>
-    <div class="box b fixed">
-        정사각형 B
-    </div>    
+    <div class="long-box a"> 큰 사각형 A </div>
+    <div class="box b fixed"> 정사각형 B </div>
 </body>
 
 </html>

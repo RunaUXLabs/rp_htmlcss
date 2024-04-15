@@ -1,49 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>position이 선언된 객체의 z축 z-index 01</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/09/css/z-index.css">
 </head>
 
 <body>
-    <style>
-        /* 고정 위치 */
-        .fixed-a {
-            position: fixed;
-
-            /* 왼쪽 상단에 붙어 있다 */
-            left: 0;
-            top: 0;
-
-            /* 정사각형 */
-            width: 100px;
-            height: 100px;
-            background-color: blue;
-            color: white;
-        }
-
-        .fixed-b {
-            position: fixed;
-
-            /* 왼쪽 상단으로부터 떨어져 있다 */
-            top: 50px;
-            left: 50px;
-
-            /* 정사각형 */
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            color: white;
-        }
-    </style>
-
-    <div class="fixed-a">
-        정사각형 A
-    </div>
-    <div class="fixed-b">
-        정사각형 B
-    </div>
+    <div class="fixed-a"> 정사각형 A </div>
+    <div class="fixed-b"> 정사각형 B </div>
 </body>
 
 </html>
