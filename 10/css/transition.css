@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+.hover-btn {
+  margin: 16px;
+
+  /* 정사각형 */
+  width: 100px;
+  background-color: red;
+  color: white;
+
+  /* 마우스 포인터 */
+  cursor: pointer;
+
+  line-height: 3;
+  text-align: center;
+
+  /* transition: 속성 시간 가속도 */
+
+  /* 5초 동안 배경색만 전환 */
+  /* transition: background-color 1s; */
+
+  /* transition2.html의 내용
+  전부 감지하여 변하게 하고 싶을 때 */
+  /* transition: all 1s; */
+  transition: 1s;
+}
+
+/* 마우스를 올려놓을 경우 */
+.hover-btn:hover {
+  /* 요소가 커지고 */
+  transform: scale(1.2);
+
+  /* to부분에만 transition을 적용할 수 있다.
+  from에서 to로 변하는 모습에만 효과가 적용되고,
+  다시 from으로 돌아갈 때에는 펑!하고 변한다. */
+  /* transition: all 1s; */
+
+  /* 배경색이 바뀜 */
+  background-color: blue;
+}
+.timing-function {
+  /* 실제로 만든 타이밍 함수 */
+  transition-timing-function: cubic-bezier(0, 1.04, 0, 1.91);
+}
+
+.box {
+  margin: 1000px 0 300px 0;
+  width: 200px;
+  height: 200px;
+  background: violet;
+}

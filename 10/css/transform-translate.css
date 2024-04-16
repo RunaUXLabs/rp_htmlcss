@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+.trans-a {
+  transform: translateX(150px) translateY(150px);
+  /* transform: translateX(150px);
+  transform: translateY(150px); */
+  /* transform: translate(150px, 200px); */
+
+  /* 정사각형 */
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  color: white;
+}
+
+/* 정사각형 */
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  color: white;
+}
+
+/* 작은 정사각형 */
+.sm-box {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+}
+
+.flex {
+  display: flex;
+}

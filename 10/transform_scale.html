@@ -1,47 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>transform에서 크기변화 담당 scale(값)</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/10/css/transform-scale.css">
 </head>
 
 <body>
-    <style>
-        .scale-a {
-            transform: scale(2) translate(50px, 50px);
-
-            /* 정사각형 */
-            width: 100px;
-            height: 100px;
-            background-color: blue;
-            color: white;
-
-            z-index: 5;
-        }
-
-        /* 정사각형 */
-        .box {
-            width: 200px;
-            height: 200px;
-            background-color: red;
-            color: white;
-        }
-
-        /* 작은 정사각형 */
-        .sm-box {
-            width: 100px;
-            height: 100px;
-            background-color: yellow;
-
-            z-index: 9;
-        }
-
-        .flex {
-            display: flex;
-        }
-    </style>
-
     <div class="flex">
         <div class="scale-a">
             정사각형 A

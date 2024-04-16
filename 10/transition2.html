@@ -1,44 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>from과 to의 변화를 감지하여 중간을 생성하는 transition 2</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/10/css/transition.css">
+    <link rel="stylesheet" href="/10/css/css_event.css">
 </head>
 
 <body>
-    <style>
-        .hover-btn {
-            /* 겉 여백 */
-            margin: 16px;
+    <!-- css이벤트 연습해보기 -->
+    <h1 class="tc">css hover event</h1>
+    <h2 class="tc">scale</h2>
+    <div class="wrap">
+        <div class="box b01">
+            <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam suscipit sint
+                ab beatae nihi</p>
+        </div>
+        <div class="box b02">
+            <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam suscipit sint
+                ab beatae nihi</p>
+        </div>
+        <div class="box b03">
+            <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam suscipit sint
+                ab beatae nihi</p>
+        </div>
+    </div>
 
-            /* 정사각형 */
-            width: 100px;
-            background-color: red;
-            color: white;
-
-            /* 마우스 포인터 */
-            cursor: pointer;
-
-            line-height: 300%;
-            text-align: center;
-
-            /* 5초 동안 모든 속성 전환 */
-            transition: 5s;
-        }
-
-        /* 마우스를 올려놓을 경우 */
-        .hover-btn:hover {
-            /* 요소가 커지고 */
-            transform: scale(1.2);
-
-            /* 배경색이 바뀜 */
-            background-color: blue;
-        }
-    </style>
-
-    <div class="hover-btn">
-        버튼
+    <h2 class="tc">rotateY</h2>
+    <div class="wrap">
+        <div class="circle c01">
+            <p class="front"></p>
+            <p class="back">
+                <span class="material-icons">
+                    emoji_nature
+                </span>
+            </p>
+        </div>
+        <div class="circle c02">
+            <p class="front"></p>
+            <p class="back">
+                <span class="material-icons">
+                    movie_filter
+                </span>
+            </p>
+        </div>
+        <div class="circle c03">
+            <p class="front"></p>
+            <p class="back">
+                <span class="material-icons">
+                    outdoor_grill
+                </span>
+            </p>
+        </div>
     </div>
 </body>
 

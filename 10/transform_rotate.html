@@ -1,59 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>transform에서 회전 담당 rotate(값)</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/10/css/transform-rotate.css">
 </head>
 
 <body>
-    <style>
-        .container {
-            /* 가로로 배치하기 위한 flexbox */
-            display: flex;
-     
-            gap: 50px;
-     
-            /* 회전으로 인한 여백 추가 */
-            margin: 32px;
-        }
-     
-        /* 회전(각도) */
-        .rotate-deg {
-            transform: rotate(45deg);
-        }
-     
-        /* 회전(라디안) */
-        .rotate-rad {
-            transform: rotate(180rad);
-        }
-     
-        /* 회전(회전수) */
-        .rotate-turn {
-            transform: rotate(-0.5turn);
-        }
-     
-        /* 정사각형 */
-        .box {
-            width: 100px;
-            height: 100px;
-        }
-     
-        .blue {
-            color: white;
-            background-color: blue;
-        }
-     
-        .red {
-            color: white;
-            background-color: red;
-        }
-     
-        .yellow {
-            background-color: yellow;
-        }
-    </style>
-     
     <div class="container">
         <div class="box rotate-deg blue">
             정사각형<br>(각도)
@@ -64,7 +19,7 @@
         <div class="box rotate-turn yellow">
             정사각형<br>(회전 수)
         </div>
-    </div>    
+    </div>
 </body>
 
 </html>

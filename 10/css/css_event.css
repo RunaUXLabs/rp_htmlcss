@@ -1,0 +1,149 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  min-width: 1280px;
+}
+
+/* css Event */
+.tc {
+  text-align: center;
+}
+.wrap {
+  width: 1200px;
+  margin: 50px auto;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.wrap .box {
+  width: 30%;
+  height: 400px;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.wrap .box p {
+  width: 100%;
+  height: 40%;
+  padding: 20px;
+  color: #fff;
+  transform: translateY(100%);
+  transition: all 0.5s;
+}
+.wrap .box.b01 {
+  background: url(/10/images/crecendo/furniture_3.jpg) 50% 50% no-repeat;
+  background-size: 150%;
+}
+.wrap .box.b02 {
+  background: url(/10/images/crecendo/furniture_2.png) 50% 50% no-repeat;
+  background-size: 200%;
+}
+.wrap .box.b03 {
+  background: url(/10/images/crecendo/furniture_4.jpg) 50% 50% no-repeat;
+  background-size: 150%;
+}
+.wrap .box.b01 p {
+  background: #588ebb;
+}
+.wrap .box.b02 p {
+  background: #8ebb58;
+}
+.wrap .box.b03 p {
+  background: #bb588e;
+}
+.wrap .box:hover {
+  background-size: 130%;
+}
+.wrap .box.b02:hover {
+  background-size: 180%;
+}
+.wrap .box:hover p {
+  transform: translateY(0%);
+}
+
+
+/* hover시 앞뒷면보이기 */
+.wrap .circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
+}
+.wrap .circle::before {
+  width: 1px;
+  height: 100%;
+  background: #d7d7d7;
+  position: absolute;
+  left: 100px;
+  top: -100%;
+  content: "";
+}
+.wrap .circle::after {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 1px solid #f0f0f0;
+  border-top: 3px solid #f0f0f0;
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  content: "";
+}
+/* 가상요소는 *{box-sizing:border-box;}에 포함되지 않으므로 인라인으로 제작을 원할땐, 따로 가상요소에 box-sizing:border-box;를 입력해야한다. */
+.wrap .circle p {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition: transform 0.7s ease-out;
+  transition: transform 0.7s ease-out;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.wrap .circle p.front {
+  z-index: 10;
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+.wrap .circle.c01 p.front {
+  background: #e7a68a;
+}
+.wrap .circle.c02 p.front {
+  background: #ffc979;
+}
+.wrap .circle.c03 p.front {
+  background: #eba6a9;
+}
+.wrap .circle p.back {
+  z-index: 5;
+  background: #c4e7f7;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.wrap .circle p.back span {
+  color: #758a94;
+  font-size: 100px;
+  text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.13);
+}
+.wrap .circle:hover p.front {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.wrap .circle:hover p.back {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}

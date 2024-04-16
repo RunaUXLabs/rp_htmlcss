@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+.scale-a {
+  transform: scale(2) translate(50px, 50px);
+  /* transform에 여러속성을 쓸 때에는 함수기준 띄어쓰기!
+  transform을 여러번 선언하게되면 마지막 속성만 적용되니 주의 */
+
+  /* 정사각형 */
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  color: white;
+
+  z-index: 5;
+  /* position과 같이 z-index를 적용하여 arrange를 조정할 수 있다. */
+}
+
+/* 정사각형 */
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  color: white;
+}
+
+/* 작은 정사각형 */
+.sm-box {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+
+  z-index: 1;
+}
+
+.flex {
+  display: flex;
+}

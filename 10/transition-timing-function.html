@@ -1,47 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>transition에서 가속도를 조정하는 타이밍함수</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/10/css/transition.css">
 </head>
 
 <body>
-    <style>
-        .hover-btn {
-            /* 겉 여백 */
-            margin: 16px;
+    <div class="hover-btn timing-function"> 버튼 </div>
 
-            /* 정사각형 */
-            width: 100px;
-            background-color: red;
-            color: white;
+    <div class="animate__animated animate__jello">CSS Animate라이브러리</div>
 
-            /* 마우스 포인터 */
-            cursor: pointer;
+    <div data-aos="flip-left" class="box">스크롤 애니메이션</div>
 
-            line-height: 300%;
-            text-align: center;
-
-            /* 5초 동안 모든 속성 전환 */
-            transition: 5s;
-            /* 실제로 만든 타이밍 함수 */
-            transition-timing-function: cubic-bezier(0, 1.04, 0, 1.91);
-        }
-
-        /* 마우스를 올려놓을 경우 */
-        .hover-btn:hover {
-            /* 요소가 커지고 */
-            transform: scale(1.2);
-
-            /* 배경색이 바뀜 */
-            background-color: blue;
-        }
-    </style>
-
-    <div class="hover-btn">
-        버튼
-    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

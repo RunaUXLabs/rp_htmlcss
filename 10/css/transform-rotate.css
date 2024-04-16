@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+.container {
+  /* 가로로 배치하기 위한 flexbox */
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  /* 회전으로 인한 여백 추가 */
+  margin: 32px;
+}
+
+/* 회전(각도) */
+.rotate-deg {
+  transform: rotate(45deg);
+}
+
+/* 회전(라디안) */
+.rotate-rad {
+  transform: rotate(180rad);
+}
+
+/* 회전(회전수) */
+.rotate-turn {
+  transform: rotate(-0.5turn);
+}
+/* 회전 A */
+.rotate-a {
+  /* transform: rotateY(60deg) rotateZ(45deg); */
+  transform: rotateX(60deg) rotateY(45deg) rotateZ(45deg);
+  /* transform에 여러속성을 쓸 때에는 함수기준 띄어쓰기!
+  transform을 여러번 선언하게되면 마지막 속성만 적용되니 주의 */
+}
+
+/* 회전 B */
+.rotate-b {
+  transform: rotateX(60deg) rotateZ(45deg);
+}
+
+/* 정사각형 */
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.blue {
+  color: white;
+  background-color: blue;
+}
+
+.red {
+  color: white;
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}

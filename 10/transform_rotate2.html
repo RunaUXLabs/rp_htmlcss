@@ -1,50 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>transform에서 축회전 담당 rotateX(값) rotateY(값) rotateZ(값)</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/10/css/transform-rotate.css">
 </head>
 
 <body>
-    <style>
-        .container {
-            /* 가로로 배치하기 위한 flexbox */
-            display: flex;
-
-            gap: 50px;
-
-            /* 회전으로 인한 여백 추가 */
-            margin: 32px;
-        }
-
-        /* 회전 A */
-        .rotate-a {
-            transform: rotateY(60deg) rotateZ(45deg);
-        }
-
-        /* 회전 B */
-        .rotate-b {
-            transform: rotateX(60deg) rotateZ(45deg);
-        }
-
-        /* 정사각형 */
-        .box {
-            width: 100px;
-            height: 100px;
-        }
-
-        .blue {
-            color: white;
-            background-color: blue;
-        }
-
-        .red {
-            color: white;
-            background-color: red;
-        }
-    </style>
-
     <div class="container">
         <div class="box rotate-a blue">
             정사각형 A

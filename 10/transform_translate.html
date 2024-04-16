@@ -1,47 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>transform에서 이동 담당 translate(x, y)</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/10/css/transform-translate.css">
 </head>
 
 <body>
-    <style>
-        .trans-a {
-            transform: translate(200px, 200px);
-
-            /* 정사각형 */
-            width: 100px;
-            height: 100px;
-            background-color: blue;
-            color: white;
-        }
-
-        /* 정사각형 */
-        .box {
-            width: 200px;
-            height: 200px;
-            background-color: red;
-            color: white;
-        }
-
-        /* 작은 정사각형 */
-        .sm-box {
-            width: 100px;
-            height: 100px;
-            background-color: yellow;
-        }
-
-        .flex {
-            display: flex;
-        }
-    </style>
-
     <div class="flex">
         <div class="trans-a">
             정사각형 A
         </div>
+        <!-- translate에 의해 위치가 이동해도 원본이 있어야하는 본래자리는
+        확보가 되어서 레이아웃이 무너지지않는다. -->
         <div class="sm-box">
             왼쪽에 <br> 정사각형 A가 <br> 있습니다
         </div>

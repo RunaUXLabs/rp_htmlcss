@@ -1,45 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>from과 to의 변화를 감지하여 중간을 생성하는 transition</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/10/css/transition.css">
 </head>
 
 <body>
-    <style>
-        .hover-btn {
-            /* 겉 여백 */
-            margin: 16px;
-
-            /* 정사각형 */
-            width: 100px;
-            background-color: red;
-            color: white;
-
-            /* 마우스 포인터 */
-            cursor: pointer;
-
-            line-height: 300%;
-            text-align: center;
-
-            /* 5초 동안 배경색만 전환 */
-            transition: background-color 5s;
-        }
-
-        /* 마우스를 올려놓을 경우 */
-        .hover-btn:hover {
-            /* 요소가 커지고 */
-            transform: scale(1.2);
-
-            /* 배경색이 바뀜 */
-            background-color: blue;
-        }
-    </style>
-
-    <div class="hover-btn">
-        버튼
-    </div>
+    <div class="hover-btn"> 버튼 </div>
+    <!-- 모두감지형식으로 transtion: all 시간 가속도; 라 쓸 수 있으며
+    transtion: 시간;이라 쓰면 속성은 전체로 가속도는 기본값으로 반영된다. -->
 </body>
 
 </html>
