@@ -1,57 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>input의 type속성</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 
 <body>
-    <!-- <input> 요소의 color 입력 -->
-    <div>
-        색을 선택하세요.
-        <input type="color">
-    </div>
+    <form>
 
-    <!-- <input> 요소의 날짜 입력 -->
-    <div>
-        날짜를 선택하세요.
-        <input type="date">
-    </div>
-    <div>
-        날짜와 시간을 선택하세요.
-        <input type="datetime-local">
-    </div>
-    
-    <!-- <input> 요소의 비밀번호 입력 -->
-    <div>
-        비밀번호라서 안 보여요.
-        <input type="password">
-    </div>
+        <!-- <input> 요소의 color 입력 -->
+        <div>
+            색을 선택하세요.
+            <input type="color">
+        </div>
 
-    <!-- <input> 요소의 파일 선택 -->
-    <div>
-        파일을 선택합니다.
-        <input type="file" multiple>
-    </div>
+        <!-- <input> 요소의 날짜 입력 -->
+        <div>
+            날짜를 선택하세요.
+            <input type="date">
+        </div>
+        <div>
+            날짜와 시간을 선택하세요.
+            <input type="datetime-local">
+        </div>
 
-    <!-- <input> 요소의 메일 입력 -->
-    <div>
-        이메일을 입력하세요.
-        <input type="email">
-    </div>
+        <!-- <input> 요소의 비밀번호 입력 -->
+        <div>
+            비밀번호라서 안 보여요.
+            <input type="password">
+        </div>
 
-    <!-- <input> 요소의 radio 버튼 입력 -->
-    <div>
-        성별을 선택하세요.
-        <input type="radio" name="g">남성
-        <input type="radio" name="g">여성
-    </div>
+        <!-- <input> 요소의 파일 선택 -->
+        <div>
+            파일을 선택합니다.
+            <input type="file">
+            <!-- 여러파일을 선택할 수 없음 -->
 
-    <!-- <input> 요소의 checkbox 버튼 입력 -->
-    <div>
-        <input type="checkbox">약관에 동의합니다.
-    </div>
+            <input type="file" multiple>
+            <!-- 여러 파일을 첨부했을 때, 각자의 파일명이 기재되지는 않고 총 갯수만 표시됨.
+            각 파일 리스트가 출력되길 원하면 스크립트로 해야함. -->
+        </div>
+
+        <!-- <input> 요소의 메일 입력 -->
+        <div>
+            이메일을 입력하세요.
+            <input type="email">
+            <!-- 간단버전 유효성검사, 이메일 유형에서 @를 썼는지 여부만 찾아내 줌.
+            더 복작한 검사는 스크립트로 해야함. -->
+        </div>
+
+        <!-- <input> 요소의 radio 버튼 입력 -->
+        <div>
+            성별을 선택하세요.
+            <!-- <input type="radio" name="g">남성
+            <input type="radio" name="g">남성 -->
+
+            <!-- name 속성 지정, 서버에서 데이터를 구분(같은 계열끼리 묶어두는)하는 기준이 된다.
+                 택 1일 때 모든 선택지에 같은 name을 써주면 된다. 그렇지 않으면 선택이 다 됨. -->
+            <input type="radio">남성
+            <input type="radio">여성
+        </div>
+
+        <!-- <input> 요소의 checkbox 버튼 입력, 다중선택을 위한 UI(1개만 선택도 가능) -->
+        <div>
+            <input type="checkbox" name="g" value="v01">약관에 동의합니다01.
+            <input type="checkbox" name="g" value="v02">약관에 동의합니다02.
+            <input type="checkbox" name="g" value="v03">약관에 동의합니다03.
+            <!-- name으로 데이터를 그룹핑하고 value로 구분한다. -->
+        </div>
+
+        <!-- 기본 유효성 검사가 잘되는지 확인하기 위한 버튼삽입  -->
+        <button type="submit">확인</button>
+    </form>
 </body>
 
 </html>

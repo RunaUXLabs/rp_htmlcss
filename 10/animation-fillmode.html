@@ -1,47 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>애니메이션 시작지점 설정 animation-fill-mode</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/10/css/animation.css">
 </head>
 
 <body>
-    <style>
-        @keyframes zoom {
-            0% {
-                transform: scale(1) rotate(0);
-            }
+    <div class="ani-btn ani_duration"> 애니메이션 </div>
+    <div class="ani-btn ani_duration ani_fill-mode"> animation-fill-mode </div>
 
-            50% {
-                transform: scale(1.5) rotate(90deg);
-            }
-
-            100% {
-                transform: scale(2) rotate(0);
-            }
-        }
-
-        .ani-btn {
-            /* 애니메이션을 위한 여백 */
-            margin: 64px;
-
-            /* 폭 */
-            width: 200px;
-
-            /* 글자 뿐만 아니라 애니메이션의 중심까지 설정 */
-            text-align: center;
-
-            animation-name: zoom;
-            /* 1초간 진행 */
-            animation-duration: 1s;
-            /* 재생 후 그대로 유지 */
-            animation-fill-mode: both;
-        }
-    </style>
-    <div class="ani-btn">
-        애니메이션
-    </div>
+    <!-- animate.css활용하여 커스텀 만들기 -->
+    <div class="animate__lightSpeedInLeft">커스텀</div>
 </body>
 
 </html>

@@ -1,47 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>애니메이션 재생전 대기시간 animation-delay</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/10/css/animation.css">
 </head>
 
 <body>
-    <style>
-        @keyframes zoom {
-            0% {
-                transform: scale(1) rotate(0);
-            }
-
-            50% {
-                transform: scale(1.5) rotate(90deg);
-            }
-
-            100% {
-                transform: scale(2) rotate(0);
-            }
-        }
-
-        .ani-btn {
-            /* 애니메이션을 위한 여백 */
-            margin: 64px;
-
-            /* 폭 */
-            width: 200px;
-
-            /* 글자 뿐만 아니라 애니메이션의 중심까지 설정 */
-            text-align: center;
-
-            animation-name: zoom;
-            /* 1초간 진행 */
-            animation-duration: 4s;
-            /* 4초간 대기 */
-            animation-delay: 4s;
-        }
-    </style>
-    <div class="ani-btn">
-        애니메이션
-    </div>
+    <div class="ani-btn ani_duration ani_delay"> 애니메이션 </div>
 </body>
 
 </html>

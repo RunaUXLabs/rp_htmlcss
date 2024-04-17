@@ -1,27 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>데이터 입력태그 input 01</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 
 <body>
-    <!-- <input> 태그 기본형 -->
-    <div><input></div>
-    
-    <!-- name 속성 지정 -->
-    <div><input name="data"></div>
-    
-    <!-- required 속성 지정 -->
-    <div><input name="data" required></div>
-    
-    <!-- placeholder 속성 지정 -->
-    <div> 
-        이메일을 입력하세요.
-        <input placeholder="example@example.com">
-    </div>
-    
+    <!-- html5의 기본 유효성 검사기능을 사용하려면 form에 감싸져 있어야 한다. form의 속성도 기본값을 적어두자. -->
+    <form action="#" method="post">
+        <div>
+            <!-- <input> 태그 기본형 -->
+            <input>
+        </div>
+
+        <div>
+            <!-- name 속성 지정, 서버에서 데이터를 구분(같은 계열끼리 묶어두는)하는 기준이 된다. -->
+            <input name="data">
+        </div>
+
+        <div>
+            <!-- required 속성 지정, 유효성 검사를 쉽게 만들어줌.
+            필수 입력에 쓰면 된다. 유효성검사는 다양한 옵션이 있음.
+            required는 빈값 검사를 쉽게 해준다. -->
+            <!-- <input name="data" required> -->
+        </div>
+
+        <div>
+            <!-- placeholder 속성 지정 -->
+            이메일을 입력하세요.
+            <!-- <input placeholder="example@example.com"> -->
+            <input placeholder="example@example.com" type="email">
+        </div>
+
+        <!-- 기본 유효성 검사가 잘되는지 확인하기 위한 버튼삽입  -->
+        <button type="submit">확인</button>
+    </form>
 </body>
 
 </html>

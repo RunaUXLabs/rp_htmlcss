@@ -1,45 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>애니메이션 플레이시간 animation-duration</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/10/css/animation.css">
 </head>
 
 <body>
-    <style>
-        @keyframes zoom {
-            0% {
-                transform: scale(1) rotate(0);
-            }
+    <!-- 키프레임 이름만 animation-name으로 선언하면 아무일도 일어나지 않음 -->
+    <div class="ani-btn"> 애니메이션 이름만 선언 </div>
 
-            50% {
-                transform: scale(1.5) rotate(90deg);
-            }
-
-            100% {
-                transform: scale(2) rotate(0);
-            }
-        }
-
-        .ani-btn {
-            /* 애니메이션을 위한 여백 */
-            margin: 64px;
-
-            /* 폭 */
-            width: 200px;
-
-            /* 글자 뿐만 아니라 애니메이션의 중심까지 설정 */
-            text-align: center;
-
-            animation-name: zoom;
-            /* 1초간 진행 */
-            animation-duration: 1s;
-        }
-    </style>
-    <div class="ani-btn">
-        애니메이션
-    </div>
+    <!-- animation-name과 animation-duration을 같이 선언해야한다. -->
+    <div class="ani-btn ani_duration"> 애니메이션 이름,
+        시간선언 </div>
 </body>
 
 </html>

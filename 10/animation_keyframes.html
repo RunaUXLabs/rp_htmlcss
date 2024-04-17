@@ -1,27 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>애니메이션 위한 앳룰, @keyframes{}</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-</head>
-
-<body>
     <style>
+        /* 기본형태
+        @keyframes 애니메이션이름 {
+            from{ css 속성들 01 }
+            40%{ css 속성들 02 }
+            70%{ css 속성들 03 }
+            to{ css 속성들 04 }
+        }
+        0~100%를 플레이 구간이라고 생각하고,
+        변화의 기점이 적용되는 부분의 수치를 찾아
+        그곳에 속성을 넣는다.
+        
+        transition처럼 구간별 부드러운 변화는 자동으로 적용되므로
+        따로 transition을 넣을 필요는 없다.
+        */
         @keyframes zoom {
-            0% {
+            from {
                 transform: scale(1) rotate(0);
             }
-     
+
             50% {
                 transform: scale(1.5) rotate(90deg);
             }
-     
-            100% {
+
+            to {
                 transform: scale(2) rotate(0);
             }
         }
-    </style>    
+    </style>
+</head>
+
+<body>
 </body>
 
 </html>

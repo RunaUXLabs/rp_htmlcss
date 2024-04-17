@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+@keyframes zoom {
+  0% {
+    transform: scale(1) rotate(0);
+    color: red;
+  }
+
+  50% {
+    transform: scale(1.5) rotate(90deg);
+  }
+
+  100% {
+    transform: scale(2) rotate(0);
+    color: blue;
+  }
+}
+
+.ani-btn {
+  /* 애니메이션을 위한 여백 */
+  margin: 64px;
+
+  /* 폭 */
+  width: 200px;
+
+  /* 글자 뿐만 아니라 애니메이션의 중심까지 설정 */
+  text-align: center;
+  color: orange;
+  animation-name: zoom;
+}
+.ani_duration {
+  /* 1초간 진행 */
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+}
+
+.ani_iteration-count {
+  /* 횟수는 숫자, 단어로 작성 가능 */
+  animation-iteration-count: 2;
+
+  /* 무한플레이 */
+  animation-iteration-count: infinite;
+}
+
+.ani_direction {
+  /* 재생 후 역재생 */
+  /* animation-direction: alternate; */
+  /* animation-direction: alternate-reverse; */
+  animation-direction: reverse;
+}
+.ani_fill-mode {
+  animation-fill-mode: both;
+  /* alternate방향에 따라 0%나 100%에서 멈춤, 다시 플레이되면 초기값 찍고 감 */
+
+  /* animation-fill-mode: forwards; */
+  /* 재생 끝으로 이동 */
+  /* animation-fill-mode: backwards; */
+  /* alternate방향과 상관없이 초기로 돌아감 */
+}
+.ani_timing-function {
+  /* 타이밍 함수 사용, 베지에 곡선은 f12를 통해 개발자도구 UI패널을 적극적으로 활용하자 */
+  animation-timing-function: cubic-bezier(0.68, 0.22, 0, 1.32);
+}
+
+.ani_delay {
+  /* 4초간 대기 */
+  animation-delay: 4s;
+}
+
+
+/* animate.css 커스텀하기 */
+@keyframes lightSpeedInLeft {
+  0% {
+    transform: translate3d(-100%, 0, 0) skewX(30deg);
+    opacity: 0
+  }
+
+  60% {
+    transform: skewX(-20deg);
+    opacity: 1
+  }
+
+  80% {
+    transform: skewX(5deg)
+  }
+
+  to {
+    transform: translateZ(0);
+    color: blue;
+  }
+}
+
+.animate__lightSpeedInLeft {
+  animation-name: lightSpeedInLeft;
+  animation-timing-function: ease-out;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}

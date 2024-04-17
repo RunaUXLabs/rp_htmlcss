@@ -1,38 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>애니메이션 플레이 가속도 조절 animation-timing-function</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/10/css/animation.css">
 </head>
 
 <body>
-    <style>
-        @keyframes zoom {
-            0% {
-                transform: scale(1) rotate(0);
-            }
-            50% {
-                transform: scale(1.5) rotate(90deg);
-            }
-            100% {
-                transform: scale(2) rotate(0);
-            }
-        }
-
-        .ani-btn {
-            /* 애니메이션을 위한 여백 */
-            /* 폭 */
-            width: 200px;
-            text-align: center;
-            animation-name: zoom;
-            animation-duration: 4s;
-            animation-delay: 4s;
-            /* 타이밍 함수 사용 */
-            animation-timing-function: cubic-bezier(0.68, 0.22, 0, 1.32);
-        }
-    </style>
-    <div class="ani-btn">애니메이션</div>
+    <!-- 가속도에 대한 옵션이 없으면 기본값으로 등속운동을 한다. -->
+    <div class="ani-btn ani_duration">가속도 조절 없는 애니메이션</div>
+    <div class="ani-btn ani_duration ani_timing-function">가속도 조절한 애니메이션</div>
 </body>
 
 </html>
