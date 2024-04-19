@@ -1,15 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>활성화는 되어있는 읽기전용 속성 readonly</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 
 <body>
-    <!-- <input> 요소 읽기 모드-->
+    <!-- <input> 요소 읽기 모드(수정불가)
+    사용자가 건드리지 못한다는 개념은 disabled과 비슷해 보이지만
+    기능적으로 다름. readonly는 모든 요소들이 드래그가 가능하다.
+    disable은 드래그가 되는것도 있고 안되는것도 있음. -->
     <div>읽어 주세요!</div>
     <input readonly value="수정은 못하고 읽기만 가능">
+
+    <!-- 사용자로부터 값을 받아야 하는 form요소에서
+        value가 지정된 것이 없는데 readonly이면 오류가 생성된다.
+        하지만 disabled는 비활성의 개념이므로 value가 없어도 문제 없다. -->
+    <input type="date" readonly>
+    <input type="color" readonly value="#f6b73c">
+    <input type="color" readonly>
+    <input type="file" readonly>
 </body>
 
 </html>

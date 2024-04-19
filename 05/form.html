@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
     <meta charset='utf-8'>
@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <!-- 전송할 데이터를 form으로 묶어서 전달한다고 생각하기. -->
     <form>
         <label for="name">이름</label> <input id="name" name="name"><br>
         <label for="age">나이</label> <input id="age" name="age" type="number" min="0"><br>
@@ -26,6 +27,8 @@
         <br>
         <button type="reset">초기화</button>
         <button type="submit">제출</button>
+        <!-- submit의 기능이 실행되면 기존 url에 ? 다음으로 쿼리가 전달된다.
+            정보유출의 씨앗이 될 수 있으니 나중에 보안쪽을 배우게 된다면 쿼리에 대해 고민해 볼 것. -->
     </form>
 </body>
 

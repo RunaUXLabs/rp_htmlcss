@@ -1,23 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>여러줄을 입력할 수 있는 textarea</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 
 <body>
-    <!-- textarea의 기본형 -->
+    <!-- textarea의 기본형, 사용자가 우하단을 잡고 크기를 마음대로 조정가능.
+    css로 막을 수 있다. -->
     <div>여러 줄로 쓸 수 있습니다.</div>
-    <textarea></textarea>
+    <textarea>𝔎 &#120078; srfswdfgwed &#120078;</textarea>
+    <!-- 특수문자를 사용하게 되면 기본 복붙, 엔티티코드(이름, hex, dec)이
+    있는데 엔티티코드를 적극적으로 사용하는것이 좋다. 인코딩이 안되면 깨질 수
+    있기 때문. -->
 
     <!-- textarea의 기본값 입력 -->
     <div>여러 줄의 textarea</div>
     <textarea>value 속성은 없습니다&#13;다음 줄 입력</textarea>
+    <!-- 사용자가 일반 글쓰기 모드처럼 엔터를 치거나 스페이스바를 연속해서
+    입력하더라도 전부 무시되고 서버에 전송된다. -->
 
     <!-- textarea의 rows 속성 사용 -->
     <div>여러 줄로 쓸 수 있습니다.</div>
     <textarea rows="4"></textarea>
+    <!-- 처음 로딩화면에서 너비와 높이를 지정하는 개념으로 cols, rows를
+    지정할 수 있다. 요즘은 css로 설정함. rows="4"라 입력되었다고 해서
+    4줄만 입력되는 것이 아니니 주의할 것!  -->
 </body>
 
 </html>

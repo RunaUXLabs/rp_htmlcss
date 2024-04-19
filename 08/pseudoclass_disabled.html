@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>비활성 상태를 찾아내는 선택자 :disabled</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        /* 전체 선택자 + 가상 클래스 */
+        /* *:disabled {
+            background-color: aqua;
+        } */
+        *[disabled] {
+            background-color: aqua;
+        }
+
+        /* 이렇게 작성 가능 */
+    </style>
 </head>
 
 <body>
-    <style>
-        /* 전체 선택자 + 가상 클래스 */
-        *:disabled {
-            background-color: aqua;
-        }
-    </style>
 
     <input disabled>
     <div disabled>
+        <!-- form 식구들에게만 사용가능한 disabled 속성,
+        일반 태그는 css로 비슷한 느낌을 낼 수 있다.
+        웹표준을 맞춰서 작성하자. -->
         비활성 div 태그
     </div>
 </body>

@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>자동완성기능을 만들어주는 기본태그 datalist</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 
 <body>
     <div>국가를 선택해 주세요.</div>
+    <!-- 기본조건은 input과 datalist가 짝으로 이루어져 있다.
+    연계성을 가지려면 input의 list값과 datalist id값이 동일해야한다.
+    사용자는 input에서 원하는 값을 입력할 수 있으며, datalist에 준비된 옵션을
+    사용자가 데이터로 입력하려하면 드롭다운으로 뜨게 된다.
+
+    준비된 option만 드롭다운으로 출력이 된다면,
+    가능한 옵션값을 한땀한땀 퍼블리셔가 넣는것이 아니라 DB에서 값을 가지고와
+    자바스크립트로 option을 밀어 넣으면 된다. -->
     <input list="dataList">
     <datalist id="dataList">
         <option value="대한민국"></option>
@@ -15,6 +24,10 @@
         <option value="일본"></option>
         <option value="미국"></option>
         <option value="영국"></option>
+        <option>태국</option>
+        <!-- select의 option과 비슷하며 value속성의 값을 입력하거나,
+        option태그의 텍스트로 삽입해야한다. 기본적으로 연동처리하려면
+        value에 값(영어 또는 숫자)을 입력해야한다. -->
     </datalist>
 </body>
 

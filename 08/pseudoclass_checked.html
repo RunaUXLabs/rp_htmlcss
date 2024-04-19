@@ -1,20 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>체크상태를 찾아내는 선택자 :checked</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        /* 전체 선택자 + 가상 클래스 */
+        /* radio, checkbox 에는 border가 적용이 안되므로 대용으로 box-shadow 사용 */
+        /* *:checked {
+            box-shadow: 0px 0px 0px 4px red;
+        } */
+
+        *[checked=":checked"] {
+            box-shadow: 0px 0px 0px 4px red;
+        }
+
+        *[checked] {
+            box-shadow: 0px 0px 0px 4px red;
+        }
+
+        /* 이렇게는 쓸 수 없다. */
+    </style>
 </head>
 
 <body>
-    <style>
-        /* 전체 선택자 + 가상 클래스 */
-        *:checked {
-            /* radio, checkbox 에는 border가 적용이 안되므로 대용으로 box-shadow 사용 */
-            box-shadow: 0px 0px 0px 4px red;
-        }
-    </style>
-
     <div>
         <input type="checkbox" id="chk">
         <label for="chk">

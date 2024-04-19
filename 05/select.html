@@ -1,23 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>드롭다운에서 원하는 값을 선택하는 select와 option</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 
 <body>
-    <div>국가를 선택해 주세요.</div>
+    <h1>select</h1>
+    <h2>일반 select: 국가를 선택해 주세요.</h2>
     <select>
+        <!-- option의 첫번째 목록이 기본 선택으로 보이며,
+            selected 속성을 통해 기본값을 설정할 수 있다. -->
         <option>대한민국</option>
-        <option>중국</option>
+        <option selected>중국</option>
         <option>일본</option>
         <option>미국</option>
         <option>영국</option>
     </select>
+    <!-- option에는 value속성의 값을 입력하거나, 태그의 텍스트로 삽입해야한다.
+        기본적으로 연동처리하려면 value에 값(영어 또는 숫자)을 입력해야한다. -->
 
     <!-- 다중 선택 -->
-    <div>국가를 선택해 주세요.</div>
+    <h2>다중 select: 국가를 선택해 주세요.</h2>
     <select multiple>
         <option>대한민국</option>
         <option>중국</option>

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>속성에서 값 입력하는 value</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
@@ -9,13 +10,17 @@
 <body>
     <!-- <input> 요소의 value 속성: 텍스트 -->
     <div>기본 값을 넣을 수 있습니다.</div>
+    <input>
     <input value="기본 값">
-    
+    <input placeholder="기본 값">
+
     <!-- <input> 요소의 value 속성: 날짜 -->
     <div>물론 날짜도 가능합니다.</div>
     <input type="date" value="2022-01-01">
 
-    <!-- <input> 요소의 value 속성: 날짜 오류 -->
+    <!-- <input> 요소의 value 속성: 날짜 오류
+    잘못된 데이터를 넣으면 무시하고 넘어간다.
+    value에 대해 잘 모르면 쓰지말 것. -->
     <div>물론 날짜도 가능합니다.</div>
     <input type="date" value="안녕하세요.">
 </body>

@@ -1,30 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>데이터 설명을 붙이는 label</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 
 <body>
+    <h1>label</h1>
     <!-- label 태그를 사용했을 때 -->
-    <div>이름과 나이(label 태그)</div>
+    <h2>label 태그를 사용한 이름과 나이</h2>
     <input> <label>이름</label> <br>
     <input type="number" min="0">
     <label>나이</label>
 
     <!-- span 태그를 사용했을 때 -->
-    <div>이름과 나이(span 태그)</div>
+    <h2>span 태그를 사용한 이름과 나이</h2>
     <input> <span>이름</span> <br>
     <input type="number" min="0">
     <span>나이</span>
 
     <!-- for 속성 사용 -->
-    <div>이름과 나이</div>
-    <input id="name"> 
+    <h2>for 속성 사용한 이름과 나이</h2>
+    <input id="name">
     <label for="name">이름</label><br>
-    <input id="age"> 
+    <input id="age">
     <label for="age">나이</label>
+
+    <h2>체크박스와 라디오 버튼에 for속성 사용해서 UX개선하기</h2>
+    <!-- input의 id와 label의 for의 값을 동일하게 만들어 준다.
+        label을 클릭하면 짝이 맞게 배치한 해당 input이 활성화 된다.  -->
+    <input id="gen01" type="radio" name="g" checked>
+    <label for="gen01">남성</label>
+
+    <input id="gen02" type="radio" name="g">
+    <label for="gen02">여성</label>
 </body>
 
 </html>
