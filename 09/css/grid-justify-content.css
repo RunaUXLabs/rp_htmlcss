@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+* {
+  outline: 1px solid red;
+}
+
+/* 그리드 */
+.grid {
+  display: grid;
+  background-color: azure;
+  /* 500px 폭*/
+  width: 500px;
+
+  /* 150px 2개 */
+  grid-template-columns: 150px 150px;
+
+  /* 그리드 아이템 기본 축 기준 중심 정렬 */
+  /* flex에서 썼던 속성값과 일반 방향값 모두 가능 */
+  /* justify-content: space-between; */
+  justify-content: left;
+
+  /* justify-content: grid-left; */
+  /* 속성값으로 grid-left이런건 안됨 */
+}
+
+.grid > div {
+  background-color: blueviolet;
+  color: white;
+  border: solid 1px black;
+
+  margin: 0 30px;
+  /* 플렉스에서는 자식에 선언된 값을 유지하면서
+  공간이 유동적으로 변형되는것이(선),
+  부족할 경우 뚫고나감(후)
+  쫀득쫀득을 근본으로 가져감 */
+
+  /* 그리드에서는 공간확보가(선),
+  자식이 확보된 공간 이외로 늘면 뚫고나감(후)
+  각을 잡는것을 근본으로 가져감 */
+
+  /* 넓이설정 */
+  /* width: 100px; */
+  /* 높이 설정 */
+  height: 100px;
+}

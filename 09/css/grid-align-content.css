@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+* {
+  outline: 1px solid red;
+}
+
+.grid {
+  display: grid;
+
+  /* 150px 2개 */
+  grid-template-columns: 150px 150px;
+
+  /* 500px 정사각형 */
+
+  width: 500px;
+  height: 500px;
+
+  background-color: azure;
+
+  /* 그리드 아이템 기본 축 기준 중심 정렬 */
+  /* align-content: space-between; */
+  /* align-content: space-between; */
+
+  /* 공간확보가 (선)!이라는 부분을 기억할 것.
+  위로 붙이고 싶으면 align-content선언해서
+  flex-start라 선언해야한다. */
+  /* align-content: flex-start; */
+}
+
+.grid > div {
+  background-color: blueviolet;
+  color: white;
+  height: 100px;
+  border: solid 1px black;
+}

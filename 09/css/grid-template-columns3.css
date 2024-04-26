@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 그리드 */
+.grid {
+  display: grid;
+  grid-template-columns: 150px 1fr
+}
+
+.grid > div,
+.flex > div,
+.block > div,
+.block2 > div {
+  /* 보라 배경색 */
+  background-color: blueviolet;
+  color: white;
+
+  /* 높이 설정 */
+  height: 100px;
+
+  /* 테두리 */
+  border: solid 1px black;
+}
+
+/* flex을 이용하여 동일 가변레이아웃 구성 */
+.flex {
+  display: flex;
+  width: 100%;
+}
+.flex > div:first-child {
+  width: 150px;
+}
+.flex > div:last-child {
+  flex: 1;
+}
+
+/* flex와 calc()함수를 이용하여 동일 가변레이아웃 구성 */
+.block {
+  width: 100%;
+  display: flex;
+}
+
+.block > div:first-child {
+  width: 150px;
+}
+
+.block > div:last-child {
+  width: calc(100% - 150px);
+}
+
+/* block과 float을 이용하여 동일 가변레이아웃 구성 */
+.block2 {
+  width: 100%;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.block2 {
+  width: 100%;
+}
+.block2 > div {
+  float: left;
+}
+.block2 > div:first-child {
+  width: 150px;
+}
+.block2 > div:last-child {
+  width: calc(100% - 150px);
+  /* box-sizing에 따라 모양이 다를 수 있음
+  100%를 구성하는 요소에 단 1px이라도 오버되면 구성이 안됨 */
+}

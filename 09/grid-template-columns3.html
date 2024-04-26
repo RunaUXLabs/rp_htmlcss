@@ -1,48 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>그리드에서 가변컬럼 처리와 동일효과</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/09/css/grid-template-columns3.css">
 </head>
 
 <body>
-    <style>
-        /* 그리드 */
-        .grid {
-            display: grid;
-     
-            /* 150px 1개 1fr 1개 */
-            grid-template-columns: 150px 1fr
-        }
-     
-        .grid > div {
-            /* 보라 배경색 */
-            background-color: blueviolet;
-            color: white;
-     
-            /* 높이 설정 */
-            height: 100px;
-     
-            /* 테두리 */
-            border: solid 1px black;
-        }
-    </style>
-       
     <div class="grid">
-        <div>
-            첫 번째
-        </div>
-        <div>
-            두 번째
-        </div>
-        <div>
-            세 번째
-        </div>
-        <div>
-            네 번째
-        </div>
-    </div>    
+        <div> 첫 번째 </div>
+        <div> 두 번째는 가변 </div>
+    </div>
+    <div class="flex">
+        <div> 첫 번째 </div>
+        <div> 두 번째는 가변 </div>
+    </div>
+    <div class="block">
+        <div> 첫 번째 </div>
+        <div> 두 번째는 가변 </div>
+    </div>
+    <div class="block2 clearfix">
+        <div> 첫 번째 </div>
+        <div> 두 번째는 가변 </div>
+    </div>
 </body>
 
 </html>

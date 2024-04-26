@@ -1,53 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>그리드에서 사용하는 gap</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-</head>
-
-<body>
     <style>
         /* 그리드 */
         .grid {
             display: grid;
 
-            /* 150px 2개 */
+            /* 150px 컬럼 2개 */
             grid-template-columns: 150px 150px;
 
-            /* 간격 */
-            gap: 16px;
+            /* 플렉스와는 다르게 간격을 두번 다 선언하는것이 기본이라고 생각하자! */
+            gap: 16px 8px;
+            /* gap: row간격 column간격; */
         }
 
         .grid>div {
-            /* 보라 배경색 */
             background-color: blueviolet;
             color: white;
-
-            /* 높이 설정 */
             height: 100px;
-
-            /* 테두리 */
             border: solid 1px black;
         }
     </style>
+</head>
 
+<body>
     <div class="grid">
-        <div>
-            첫 번째
-        </div>
-        <div>
-            두 번째
-        </div>
-        <div>
-            세 번째
-        </div>
-        <div>
-            네 번째
-        </div>
-        <div>
-            다섯 번째
-        </div>
+        <div> 첫 번째 </div>
+        <div> 두 번째 </div>
+        <div> 세 번째 </div>
+        <div> 네 번째 </div>
+        <div> 다섯 번째 </div>
     </div>
 </body>
 

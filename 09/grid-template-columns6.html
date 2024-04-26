@@ -1,50 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>그리드에서 가변컬럼과 고정값이 섞여있을 때</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-</head>
-
-<body>
     <style>
-        /* 그리드 */
         .grid {
             display: grid;
 
             /* 150px로 될 때 까지 채워! */
+            /* auto-fill은 고정값과 사용하면, row-wrap과 column을
+            자율자재로 쓸수있는 느낌이다. 한번 선언으로! */
             grid-template-columns: repeat(auto-fill, 150px)
+
+            /* 고정값이 아닌 fr을 쓰게되면 한자리 다 차지하는 fill처럼 됨 */
+            /* grid-template-columns: repeat(auto-fill, 1fr) */
         }
 
         .grid>div {
-            /* 보라 배경색 */
             background-color: blueviolet;
             color: white;
-
-            /* 높이 설정 */
             height: 100px;
-
-            /* 테두리 */
             border: solid 1px black;
         }
     </style>
+</head>
 
+<body>
     <div class="grid">
-        <div>
-            첫 번째
-        </div>
-        <div>
-            두 번째
-        </div>
-        <div>
-            세 번째
-        </div>
-        <div>
-            네 번째
-        </div>
-        <div>
-            다섯 번째
-        </div>
+        <div> 첫 번째 </div>
+        <div> 두 번째 </div>
+        <div> 세 번째 </div>
+        <div> 네 번째 </div>
+        <div> 다섯 번째 </div>
     </div>
 </body>
 

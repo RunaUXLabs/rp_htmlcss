@@ -1,50 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>그리드에서 같은 값을 반복하여 사용할 때 repeat(횟수, 사이즈)</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-</head>
-
-<body>
     <style>
-        /* 그리드 */
         .grid {
             display: grid;
-
-            /* 1fr로 3개 */
-            grid-template-columns: repeat(3, 1fr)
+            /* 1fr로 n개, repeat(횟수, 사이즈) */
+            grid-template-columns: repeat(8, 1fr)
         }
 
         .grid>div {
-            /* 보라 배경색 */
             background-color: blueviolet;
             color: white;
-
-            /* 높이 설정 */
             height: 100px;
-
-            /* 테두리 */
             border: solid 1px black;
         }
     </style>
+</head>
 
+<body>
     <div class="grid">
-        <div>
-            첫 번째
-        </div>
-        <div>
-            두 번째
-        </div>
-        <div>
-            세 번째
-        </div>
-        <div>
-            네 번째
-        </div>
-        <div>
-            다섯 번째
-        </div>
+        <div> 첫 번째 </div>
+        <div> 두 번째 </div>
+        <div> 세 번째 </div>
+        <div> 네 번째 </div>
+        <div> 다섯 번째 </div>
     </div>
 </body>
 

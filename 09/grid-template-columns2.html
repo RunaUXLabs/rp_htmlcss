@@ -1,47 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
+    <title>그리드에서 컬럼 지정</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-</head>
-
-<body>
     <style>
         /* 그리드 */
         .grid {
             display: grid;
 
-            /* 150px로 3개 */
-            grid-template-columns: 150px 150px 150px
+            /* 150px로 3개 컬럼 지정하겠소, 마음대로 지정 가능 */
+            grid-template-columns: 150px 50px 150px;
+            /* grid-template-columns: 150px 150px 150px; */
         }
 
         .grid>div {
-            /* 보라 배경색 */
             background-color: blueviolet;
             color: white;
-
-            /* 높이 설정 */
             height: 100px;
-
-            /* 테두리 */
             border: solid 1px black;
         }
+
+        /* 컬럼을 부모에서 지정했는데 개별적으로 변경을 한다면?
+        다음칸에 줄 서 있는 자식이 밀리는 것이 아니라 겹쳐 버림 */
+        /* .grid>div:nth-child(5){ width: 300px; } */
     </style>
+</head>
+
+<body>
 
     <div class="grid">
-        <div>
-            첫 번째
-        </div>
-        <div>
-            두 번째
-        </div>
-        <div>
-            세 번째
-        </div>
-        <div>
-            네 번째
-        </div>
+        <div> 첫 번째 </div>
+        <div> 두 번째 </div>
+        <div> 세 번째 </div>
+        <div> 네 번째 </div>
+        <!-- <div> 네 번째 </div>
+        <div> 네 번째 </div>
+        <div> 네 번째 </div>
+        <div> 네 번째 </div>
+        <div> 네 번째 </div>
+        <div> 네 번째 </div>
+        <div> 네 번째 </div> -->
     </div>
 </body>
 
